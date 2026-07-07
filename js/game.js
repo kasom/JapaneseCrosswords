@@ -36,10 +36,10 @@ class Game {
       .then(text => {
         const parsed = parseCSV(text);
         if (parsed.rows && parsed.rows.length > 0) {
-          const isManual = parsed.rows[0].hasOwnProperty('row') && 
-                           parsed.rows[0].row !== undefined && 
-                           parsed.rows[0].row !== '';
-          
+          const isManual = parsed.rows[0].hasOwnProperty('row') &&
+            parsed.rows[0].row !== undefined &&
+            parsed.rows[0].row !== '';
+
           this.state.wordlist = parsed.rows;
           if (isManual) {
             this.loadManualLayout(parsed.rows);
@@ -83,16 +83,16 @@ class Game {
   }
 
   loadManualLayout(words) {
-    this.state.gridSize = 15; 
+    this.state.gridSize = 15;
     this.state.grid = Array(15).fill(null).map(() => Array(15).fill(null));
     this.state.words = words;
-    
+
     words.forEach((w, wIdx) => {
       const row = parseInt(w.row);
       const col = parseInt(w.col);
       const dir = w.direction || 'across';
       const syllables = splitIntoSyllables(w.reading || '');
-      
+
       for (let i = 0; i < syllables.length; i++) {
         const r = dir === 'across' ? row : row + i;
         const c = dir === 'across' ? col + i : col;
@@ -121,14 +121,14 @@ class Game {
     }
 
     this.resetGameplayState();
-    
+
     const firstWord = this.state.placedWords[0];
     if (firstWord) {
       this.state.direction = firstWord.direction;
       this.state.selectedWord = firstWord;
       this.state.selectedCell = { row: firstWord.row, col: firstWord.col };
     }
-    
+
     this.render();
   }
 
@@ -144,14 +144,14 @@ class Game {
 
   generateRandomPuzzle(difficulty = 'medium') {
     this.state.currentDifficulty = difficulty;
-    
+
     let size = 13;
     if (difficulty === 'easy') {
       size = 10;
     } else if (difficulty === 'hard') {
       size = 15;
     }
-    
+
     this.state.gridSize = size;
 
     const pool = shuffle([...this.state.wordlist]);
@@ -171,16 +171,16 @@ class Game {
       this.state.grid = result.grid;
       this.state.placedWords = result.words;
       this.state.words = result.words;
-      
+
       this.resetGameplayState();
-      
+
       const firstWord = this.state.placedWords[0];
       if (firstWord) {
         this.state.direction = firstWord.direction;
         this.state.selectedWord = firstWord;
         this.state.selectedCell = { row: firstWord.row, col: firstWord.col };
       }
-      
+
       this.render();
       this.updateDifficultyControls();
     } else {
@@ -208,7 +208,7 @@ class Game {
   setupEventListeners() {
     document.addEventListener('keydown', (e) => this.handleKeydown(e));
     document.addEventListener('click', (e) => this.handleClick(e));
-    
+
     const selector = document.getElementById('difficulty-selector');
     if (selector) {
       selector.addEventListener('change', (e) => {
@@ -362,7 +362,7 @@ class Game {
 
     this.state.selectedCell = { row, col };
     this.state.romajiBuffer = '';
-    
+
     const word = this.findWordForCell(row, col, this.state.direction);
     if (word) {
       this.state.selectedWord = word;
@@ -374,7 +374,7 @@ class Game {
         this.state.selectedWord = oWord;
       }
     }
-    
+
     this.render();
   }
 
@@ -460,7 +460,7 @@ class Game {
 
   checkWordCompletion() {
     if (!this.state.selectedWord) return;
-    
+
     this.state.placedWords.forEach(w => {
       const syllables = splitIntoSyllables(w.reading || '');
       const wordLen = syllables.length;
@@ -471,7 +471,7 @@ class Game {
         const r = w.direction === 'across' ? w.row : w.row + i;
         const c = w.direction === 'across' ? w.col + i : w.col;
         const cell = this.state.grid[r]?.[c];
-        
+
         if (!cell || !cell.userInput) {
           filled = false;
           correct = false;
@@ -671,7 +671,7 @@ class Game {
         return a.number - b.number;
       });
 
-      listEl.innerHTML = sortedWords.map(w => 
+      listEl.innerHTML = sortedWords.map(w =>
         `<div class="victory-word-item">
           <span class="victory-word-number">${w.number} ${w.direction.toUpperCase()}</span>
           <span class="victory-word-kanji">${w.word}</span>
@@ -714,7 +714,7 @@ class Game {
 
     const size = this.state.gridSize;
     gridEl.style.setProperty('--grid-size', size);
-    
+
     let html = '';
 
     for (let r = 0; r < size; r++) {
@@ -787,7 +787,7 @@ class Game {
     const across = this.state.placedWords
       .filter(w => w.direction === 'across')
       .sort((a, b) => a.number - b.number);
-    
+
     const down = this.state.placedWords
       .filter(w => w.direction === 'down')
       .sort((a, b) => a.number - b.number);
@@ -1071,10 +1071,28 @@ class Game {
     this.toggleDirection();
   }
 
-   handleDakuten(direction) {
+  handleDakuten(direction) {
     if (!this.state.selectedCell || !this.state.selectedWord) return;
     const prevCell = this.getPreviousCell();
     if (!prevCell || !prevCell.userInput) return;
+
+    const { row, col } = this.state.selectedCell;
+    const word = this.state.selectedWord;
+
+    let prevRow, prevCol;
+    let prevPrevRow, prevPrevCol;
+
+    if (word.direction === 'across') {
+      prevRow = row;
+      prevCol = col - 1;
+      prevPrevRow = row;
+      prevPrevCol = col - 2;
+    } else {
+      prevRow = row - 1;
+      prevCol = col;
+      prevPrevRow = row - 2;
+      prevPrevCol = col;
+    }
 
     const kana = prevCell.userInput;
     const toBaseDakuten = this.dakutenToBase[kana];
@@ -1082,23 +1100,67 @@ class Game {
 
     let converted = null;
 
-    if (this.baseToDakuten[kana] || this.baseToHandakuten[kana]) {
-      converted = this.baseToDakuten[kana];
-    } else if (toBaseDakuten) {
-      if (this.baseToHandakuten[toBaseDakuten]) {
-        converted = this.baseToHandakuten[toBaseDakuten];
-      } else {
-        converted = toBaseDakuten;
+    if (kana.length === 2) {
+      // Handle 2-character Yōon (e.g. しゃ -> じゃ)
+      const base = kana[0];
+      const small = kana[1];
+      let convertedBase = null;
+
+      if (this.baseToDakuten[base] || this.baseToHandakuten[base]) {
+        convertedBase = this.baseToDakuten[base] || this.baseToHandakuten[base];
+      } else if (this.dakutenToBase[base]) {
+        if (this.baseToHandakuten[this.dakutenToBase[base]]) {
+          convertedBase = this.baseToHandakuten[this.dakutenToBase[base]];
+        } else {
+          convertedBase = this.dakutenToBase[base];
+        }
+      } else if (this.handakutenToBase[base]) {
+        convertedBase = this.handakutenToBase[base];
       }
-    } else if (toBaseHanda) {
-      converted = toBaseHanda;
-    } else if (this.smallToNormal[kana]) {
-      converted = this.smallToNormal[kana];
-    } else if (this.normalToSmall[kana]) {
-      converted = this.normalToSmall[kana];
+
+      if (convertedBase) {
+        converted = convertedBase + small;
+      }
+    } else {
+      // Standard 1-character logic
+      if (this.baseToDakuten[kana] || this.baseToHandakuten[kana]) {
+        converted = this.baseToDakuten[kana];
+      } else if (toBaseDakuten) {
+        if (this.baseToHandakuten[toBaseDakuten]) {
+          converted = this.baseToHandakuten[toBaseDakuten];
+        } else {
+          converted = toBaseDakuten;
+        }
+      } else if (toBaseHanda) {
+        converted = toBaseHanda;
+      } else if (this.smallToNormal[kana]) {
+        converted = this.smallToNormal[kana];
+      } else if (this.normalToSmall[kana]) {
+        converted = this.normalToSmall[kana];
+      }
     }
 
     if (converted && converted !== kana) {
+      // Check if we converted to a small Yōon (ゃ, ゅ, ょ) and can merge with the previous cell
+      if (['ゃ', 'ゅ', 'ょ'].includes(converted)) {
+        const prevPrevCell = (prevPrevRow >= 0 && prevPrevCol >= 0) ? this.state.grid[prevPrevRow]?.[prevPrevCol] : null;
+        if (prevPrevCell && prevPrevCell.userInput && prevPrevCell.userInput.length === 1) {
+          const base = prevPrevCell.userInput;
+          if (this.canCombine(base, converted)) {
+            prevPrevCell.userInput = base + converted;
+            prevCell.userInput = ''; // clear the merged cell
+            
+            // Move cursor back to the cleared cell
+            this.state.selectedCell = { row: prevRow, col: prevCol };
+            
+            this.checkWordCompletion();
+            this.render();
+            return;
+          }
+        }
+      }
+
+      // Default: just apply conversion to prevCell
       prevCell.userInput = converted;
       this.checkWordCompletion();
       this.render();
@@ -1212,10 +1274,10 @@ class Game {
     reader.onload = (e) => {
       const parsed = parseCSV(e.target.result);
       if (parsed.rows && parsed.rows.length > 0) {
-        const isManual = parsed.rows[0].hasOwnProperty('row') && 
-                         parsed.rows[0].row !== undefined && 
-                         parsed.rows[0].row !== '';
-        
+        const isManual = parsed.rows[0].hasOwnProperty('row') &&
+          parsed.rows[0].row !== undefined &&
+          parsed.rows[0].row !== '';
+
         this.state.wordlist = parsed.rows;
         if (isManual) {
           this.loadManualLayout(parsed.rows);
