@@ -451,8 +451,10 @@ class Game {
     const wordStart = word.direction === 'across' ? word.col : word.row;
     const currentPos = word.direction === 'across' ? col : row;
 
-    if (currentPos - wordStart + 1 < wordLen) {
-      this.state.selectedCell = { row: nextRow, col: nextCol };
+    if (currentPos - wordStart < wordLen) {
+      if (nextRow >= 0 && nextRow < 15 && nextCol >= 0 && nextCol < 15) {
+        this.state.selectedCell = { row: nextRow, col: nextCol };
+      }
     }
   }
 
@@ -1072,37 +1074,38 @@ class Game {
 
   handleDakuten(direction) {
     if (!this.state.selectedCell || !this.state.selectedWord) return;
-    const { row, col } = this.state.selectedCell;
-    const cell = this.state.grid[row]?.[col];
-    if (!cell || !cell.userInput) return;
+    const prevCell = this.getPreviousCell();
+    if (!prevCell || !prevCell.userInput) return;
 
-    const kana = cell.userInput;
-    const isDakuten = this.dakutenToBase[kana];
-    const isHandakuten = this.handakutenToBase[kana];
-    const isBase = this.baseToDakuten[kana];
-    const isBaseHand = this.baseToHandakuten[kana];
-
-    let converted = null;
+    const kana = prevCell.userInput;
+    const toBaseDakuten = this.dakutenToBase[kana];
+    const toBaseHanda = this.handakutenToBase[kana];
     const isDownRight = direction === 'down' || direction === 'right';
 
-    if (isBase || isBaseHand) {
+    let converted = null;
+
+    if (this.baseToDakuten[kana] || this.baseToHandakuten[kana]) {
       if (isDownRight) {
         converted = this.baseToHandakuten[kana] || this.baseToDakuten[kana];
       } else {
         converted = this.baseToDakuten[kana] || this.baseToHandakuten[kana];
       }
-    } else if (isDakuten) {
+    } else if (toBaseDakuten) {
       if (isDownRight) {
-        converted = isDakuten;
+        converted = toBaseDakuten;
       } else {
-        converted = this.baseToHandakuten[isDakuten] || isDakuten;
+        converted = this.baseToHandakuten[toBaseDakuten] || kana;
       }
-    } else if (isHandakuten) {
-      converted = isHandakuten;
+    } else if (toBaseHanda) {
+      if (isDownRight) {
+        converted = toBaseHanda;
+      } else {
+        converted = kana;
+      }
     }
 
     if (converted && converted !== kana) {
-      cell.userInput = converted;
+      prevCell.userInput = converted;
       this.checkWordCompletion();
       this.render();
     }
