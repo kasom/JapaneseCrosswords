@@ -1,58 +1,658 @@
 word,reading,meaning,thai_meaning
-学生,がくせい,student,นักเรียน
-先生,せんせい,teacher,คุณครู
-学校,がっこう,school,โรงเรียน
-友達,ともだち,friend,เพื่อน
-教室,きょうしつ,classroom,ห้องเรียน
-本,ほん,book,หนังสือ
-辞書,じしょ,dictionary,พจนานุกรม
-雑誌,ざっし,magazine,นิตยสาร
-新聞,しんぶん,newspaper,หนังสือพิมพ์
-ノート,のーと,notebook,สมุดบันทึก
-ペン,ぺん,pen,ปากกา
-鉛筆,えんぴつ,pencil,ดินสอ
-時計,とけい,clock,นาฬิกา
-鞄,かばん,bag,กระเป๋า
-机,つくえ,desk,โต๊ะ
+ああ,ああ,"Ah!, Oh!","อา!, โอ้!"
+会う,あう,"to meet, to see",เพื่อพบเห็น
+青,あお,blue,สีน้ำเงิน
+青い,あおい,blue,สีน้ำเงิน
+赤,あか,red,สีแดง
+赤い,あかい,red,สีแดง
+明るい,あかるい,bright (in reference to personality or weather); cheerful,สดใส (อ้างอิงถึงบุคลิกภาพหรือสภาพอากาศ); ร่าเริง
+秋,あき,fall (season),ฤดูใบไม้ร่วง (ฤดู)
+開く,あく,"to open, to become open",เพื่อเปิดเพื่อเปิด
+開ける,あける,to open (v.t.),เปิด (v.t.)
+上げる,あげる,"to raise, to lift","ยก, ยก"
+朝,あさ,morning,เช้า
+朝御飯,あさごはん,breakfast,อาหารเช้า
+明後日,あさって,day after tomorrow,มะรืนนี้
+足,あし,foot; leg,เท้า; ขา
+明日,あした,tomorrow,พรุ่งนี้
+あそこ,あそこ,"there, over there, that place",ที่นั่น ที่นั่น สถานที่แห่งนั้น
+遊ぶ,あそぶ,to play; to spend time pleasantly; to hang out,เล่น; ใช้เวลาอย่างเป็นสุข เพื่อออกไปเที่ยว
+暖かい,あたたかい,warm,อบอุ่น
+頭,あたま,head,หัว
+新しい,あたらしい,new,ใหม่
+あちら,あちら,this way (polite),ทางนี้(สุภาพ)
+暑い,あつい,"hot (in reference to weather), warm","ร้อน (อ้างอิงถึงสภาพอากาศ), อบอุ่น"
+熱い,あつい,hot (objects),ร้อน (วัตถุ)
+厚い,あつい,"kind, warm(hearted), thick, deep",ใจดี อบอุ่น(ใจ) หนา ลึก
+あっち,あっち,over there,ตรงนั้น
+後,あと,afterwards (later); in the future; the rest; since then,หลังจากนั้น (ต่อมา); ในอนาคต; ส่วนที่เหลือ; ตั้งแต่นั้นมา
+あなた,あなた,you,คุณ
+兄,あに,(my) older brother (humble),(ของฉัน) พี่ชาย (ถ่อมตัว)
+姉,あね,(my) older sister (humble),(ของฉัน) พี่สาว (ถ่อมตัว)
+アパート,アパート,apartment (abbr.),อพาร์ทเมนต์ (คำย่อ)
+あの,あの,"that over there; like that, that way; um...",อันนั้น; อย่างนั้นอย่างนั้น อืม...
+浴びる,あびる,"to bathe, to shower","อาบน้ำ, อาบน้ำ"
+危ない,あぶない,"dangerous, critical",อันตรายวิกฤติ
+甘い,あまい,"generous, sweet",ใจกว้างน่ารัก
+余り,あまり,not very; surplus,ไม่มาก; ส่วนเกิน
+雨,あめ,rain,ฝน
+飴,あめ,(hard) candy,(แข็ง) ลูกอม
+洗う,あらう,to wash,ซัก
+在る,ある,"to be, to have","เป็น, มี"
+有る,ある,"to be, to have","เป็น, มี"
+歩く,あるく,to walk,ที่จะเดิน
+あれ,あれ,that one (over there),อันนั้น (ตรงนั้น)
+いい,いい,good,ดี
+いいえ,いいえ,"no, not at all",ไม่เลย
+言う,いう,to say,จะพูด
+家,いえ,"house, home",บ้าน บ้าน
+いかが,いかが,"how, in what way",อย่างไร อย่างไร
+行く,いく,to go,ไป
+いくつ,いくつ,"how many, how old","เท่าไหร่, อายุเท่าไหร่"
+いくら,いくら,"how much, how many","เท่าไหร่, เท่าไหร่"
+池,いけ,pond,บ่อน้ำ
+医者,いしゃ,doctor; physician,หมอ; แพทย์
 椅子,いす,chair,เก้าอี้
-携帯,けいたい,mobile phone,โทรศัพท์มือถือ
-写真,しゃしん,photo,รูปถ่าย
-手紙,てがみ,letter,จดหมาย
-鍵,かぎ,key,กุญแจ
-財布,さいふ,wallet,กระเป๋าสตางค์
-切符,きっぷ,ticket,ตั๋ว
-家族,かぞく,family,ครอบครัว
-両親,りょうしん,both parents,พ่อแม่
-兄弟,きょうだい,siblings,พี่น้อง
-食堂,しょくどう,cafeteria,โรงอาหาร
-部屋,へや,room,ห้อง
-庭,にわ,garden,สวน
-玄関,げんかん,entrance,ทางเข้า
+忙しい,いそがしい,"busy (people, days)","ไม่ว่าง (คน, วัน)"
+痛い,いたい,hurt; painful; sore,เจ็บ; เจ็บปวด; เจ็บ
+一,いち,one,หนึ่ง
+一日,いちにち,one day (duration),หนึ่งวัน (ระยะเวลา)
+一番,いちばん,"best (most), first, number one",ดีที่สุด (มากที่สุด) อันดับแรกอันดับหนึ่ง
+いつ,いつ,when,เมื่อ
+五日,いつか,five days; fifth day of the month,ห้าวัน; วันที่ห้าของเดือน
+一緒,いっしょ,together,ด้วยกัน
+五つ,いつつ,five things,ห้าสิ่ง
+いつも,いつも,"always, usually, every time, never (with neg. verb)","เสมอ, โดยปกติ, ทุกครั้ง, ไม่เคย (มีกริยา neg.)"
+犬,いぬ,dog,หมา
+今,いま,now,ตอนนี้
+意味,いみ,"meaning, significance",ความหมาย ความสำคัญ
+妹,いもうと,younger sister (humble),น้องสาว (ถ่อมตัว)
+嫌,いや,"disagreeable, detestable, unpleasant","ไม่น่าพอใจ, น่ารังเกียจ, ไม่เป็นที่พอใจ"
+入口,いりぐち,entrance,ทางเข้า
+居る,いる,"(humble) to be (animate), to exist",(ถ่อมตัว) เป็น (เคลื่อนไหว) มีอยู่
+要る,いる,to need,ต้อง
+入れる,いれる,to put in,ใส่
+色,いろ,color,สี
+色々,いろいろ,various,ต่างๆ
+上,うえ,"above (up, top, etc.), over, on top of","ข้างบน (บน, บนสุด ฯลฯ) เหนือ บนสุดของ"
+後ろ,うしろ,"back, behind, rear","หลัง, หลัง, หลัง"
+薄い,うすい,"thin, weak",ผอม อ่อนแอ
+歌,うた,a song,เพลง
+歌う,うたう,to sing,ร้องเพลง
+うち,うち,home; house; my place,บ้าน; บ้าน; ที่ของฉัน
+生まれる,うまれる,to be born,ที่จะเกิด
+海,うみ,"sea, beach",ทะเล ชายหาด
+売る,うる,to sell (v.t.),ขาย (v.t.)
+うるさい,うるさい,noisy; annoying,เสียงดัง; น่ารำคาญ
+上着,うわぎ,"coat, jacket","เสื้อโค้ท, แจ็คเก็ต"
+映画,えいが,"movie, film","หนัง, หนัง"
+映画館,えいがかん,"movie theater, cinema","โรงภาพยนตร์, โรงหนัง"
+英語,えいご,English (language),อังกฤษ (ภาษา)
+ええ,ええ,yes,ใช่
+駅,えき,station,สถานี
+エレベーター,エレベーター,elevator,ลิฟต์
+鉛筆,えんぴつ,pencil,ดินสอ
+美味しい,おいしい,"delicious, tasty",อร่อย อร่อย
+多い,おおい,many; there are a lot,มากมาย; มีเยอะมาก
+大きい,おおきい,"big, large","ใหญ่, ใหญ่"
+大きな,おおきな,big,ใหญ่
+大勢,おおぜい,great number of people,คนเยอะมาก
+お母さん,おかあさん,mother (formal),แม่ (เป็นทางการ)
+お菓子,おかし,"confections, sweets, snack",ขนมหวาน ของว่าง
+お金,おかね,money,เงิน
+起きる,おきる,"to get up (e.g., from sleeping); to happen",ลุกขึ้น (เช่น จากการหลับ); ที่จะเกิดขึ้น
+置く,おく,to put; to lay; to place,ใส่; นอน; เพื่อวาง
+奥さん,おくさん,(someone else's) wife (hon.),(ของคนอื่น) ภรรยา (ที่รัก)
+お酒,おさけ,sake; alcohol,สาเก; แอลกอฮอล์
+お皿,おさら,"plate, dish",จานจาน
+伯父,おじさん,"uncle, middle-aged man",ลุงชายวัยกลางคน
+おじいさん,おじいさん,"grandfather, male senior citizen",คุณปู่ พลเมืองอาวุโสชาย
+教える,おしえる,"to teach, to inform, to instruct","สอน, แจ้ง, สอน"
+押す,おす,"to push, to press, to stamp (e.g., a passport)",ดัน กด ประทับตรา (เช่น หนังสือเดินทาง)
+遅い,おそい,slow; (to be) late,ช้า; (จะ) สาย
+お茶,おちゃ,(green) tea,(ชาเขียว)
+お手洗い,おてあらい,"toilet, restroom, bathroom (lit., a place to wash one's hands)","ส้วม, ห้องน้ำ, ห้องน้ำ (จุดไฟ, สถานที่ล้างมือ)"
+お父さん,おとうさん,father (formal),พ่อ (เป็นทางการ)
+弟,おとうと,younger brother,น้องชาย
+男,おとこ,"man, male",ผู้ชาย ผู้ชาย
+男の子,おとこのこ,boy,เด็กชาย
+一昨日,おととい,the day before yesterday,วันก่อน
+おととし,おととし,year before last,ปีก่อนปีที่แล้ว
+大人,おとな,adult,ผู้ใหญ่
+お腹,おなか,stomach,ท้อง
+同じ,おなじ,"same, identical",เหมือนกัน
+お兄さん,おにいさん,(someone else's) older brother (formal),(ของคนอื่น) พี่ชาย (เป็นทางการ)
+お姉さん,おねえさん,older sister (formal),พี่สาว (เป็นทางการ)
+伯母さん,おばさん,aunt,ป้า
+おばあさん,おばあさん,"grandmother, female senior-citizen",คุณย่า สตรีอาวุโส
+お風呂,おふろ,a bath,อาบน้ำ
+お弁当,おべんとう,a boxed lunch,ข้าวกล่อง
+覚える,おぼえる,"to learn, to commit to memory, to remember, to memorize","เรียนรู้, มุ่งมั่นในการจำ, จดจำ, ท่องจำ"
+おまわりさん,おまわりさん,policeman (friendly term),ตำรวจ (คำที่เป็นมิตร)
+重い,おもい,heavy; serious,หนัก; จริงจัง
+面白い,おもしろい,"interesting, amusing",น่าสนใจ น่าขบขัน
+泳ぐ,およぐ,to swim,ว่ายน้ำ
+降りる,おりる,to get off,เพื่อลง
+終る,おわる,"to finish, to close",เพื่อเสร็จสิ้นเพื่อปิด
+音楽,おんがく,Music,ดนตรี
+女,おんな,"woman, female",ผู้หญิง ผู้หญิง
+女の子,おんなのこ,girl,สาว
+外国,がいこく,foreign country; abroad,ต่างประเทศ ต่างประเทศ
+外国人,がいこくじん,foreigner,ชาวต่างชาติ
+会社,かいしゃ,"company, corporation","บริษัท, คอร์ปอเรชั่น"
 階段,かいだん,stairs,บันได
-交番,こうばん,police box,ป้อมตำรวจ
+買い物,かいもの,shopping,ช้อปปิ้ง
+買う,かう,to buy,ที่จะซื้อ
+返す,かえす,to return something,เพื่อคืนบางสิ่งบางอย่าง
+帰る,かえる,"to go back, to go home, to return",กลับบ้าน กลับบ้าน กลับ
+顔,かお,face (body part),ใบหน้า (ส่วนของร่างกาย)
+かかる,かかる,"it takes (amount of time, money) (v.i.)","ต้องใช้เวลา (ระยะเวลา, เงิน) (vi.)"
+鍵,かぎ,a lock; a key,ล็อค; กุญแจ
+書く,かく,to write,เขียน
+学生,がくせい,student,นักเรียน
+掛ける,かける,"to put on (e.g., glasses); to hang (e.g., on a wall)",สวมใส่ (เช่น แว่นตา); แขวน (เช่น บนผนัง)
+かける,かける,"to dial/call (e.g., phone); to sit down",เพื่อโทรออก/โทรออก (เช่น โทรศัพท์) นั่งลง
+傘,かさ,"umbrella, parasol",ร่ม ร่มกันแดด
+貸す,かす,to lend,ให้ยืม
+風,かぜ,"wind, breeze",สายลม
+風邪,かぜ,"cold, flu",หวัด ไข้หวัดใหญ่
+方,かた,-- honorific form for 人 (ひと) --; way of doing,-- รูปแสดงเกียรติของ 人 (ひと) --; วิธีการทำ
+家族,かぞく,"family, members of a family",ครอบครัวสมาชิกในครอบครัว
+片仮名,かたかな,katakana,คาตาคานะ
+学校,がっこう,a school,โรงเรียน
+カップ,カップ,cup,ถ้วย
+家庭,かてい,home; family,บ้าน; ครอบครัว
+角,かど,"corner (e.g., desk, pavement)",มุม (เช่น โต๊ะ ทางเท้า)
+かばん,かばん,"bag, basket","กระเป๋า, ตะกร้า"
+花瓶,かびん,(flower) vase,(ดอกไม้) แจกัน
+かぶる,かぶる,"to wear, to put on (e.g., a hat on the head)","สวมใส่, สวม (เช่น หมวกบนหัว)"
+紙,かみ,paper,กระดาษ
+カメラ,カメラ,camera,กล้อง
+火曜日,かようび,Tuesday,วันอังคาร
+辛い,からい,hot and spicy; salty,ร้อนและเผ็ด เค็ม
+体,からだ,body; health,ร่างกาย; สุขภาพ
+借りる,かりる,"to borrow, to owe",ยืมเป็นหนี้
+軽い,かるい,"light, non-serious, minor",เบาๆ ไม่จริงจัง เล็กน้อย
+カレー,カレー,curry (abbr. for curry and rice),แกง (คำย่อสำหรับแกงและข้าว)
+カレンダー,カレンダー,calendar,ปฏิทิน
+川,かわ,river,แม่น้ำ
+可愛い,かわいい,"cute, adorable",น่ารัก น่าเอ็นดู
+漢字,かんじ,kanji; Chinese character,คันจิ; ตัวอักษรจีน
+黄色,きいろ,yellow,สีเหลือง
+黄色い,きいろい,yellow,สีเหลือง
+消える,きえる,"to vanish, to disappear","หายไป, หายไป"
+聞く,きく,"to hear, to listen, to ask","ได้ยิน, ฟัง, ถาม"
+北,きた,north,เหนือ
+ギター,ギター,guitar,กีตาร์
+汚い,きたない,"dirty, unclean, filthy",สกปรก ไม่สะอาด สกปรก
+喫茶店,きっさてん,café,คาเฟ่
+切手,きって,postal (postage) stamps,แสตมป์ (ไปรษณียากร)
+切符,きっぷ,a ticket,ตั๋ว
+昨日,きのう,yesterday,เมื่อวาน
+九,きゅう,nine,เก้า
+牛肉,ぎゅうにく,beef,เนื้อ
+牛乳,ぎゅうにゅう,milk,นม
+今日,きょう,"today, this day",วันนี้ วันนี้
+教室,きょうしつ,classroom,ห้องเรียน
+兄弟,きょうだい,"siblings (humble), brothers and sisters",พี่น้อง (ถ่อมตัว) พี่น้อง
+去年,きょねん,last year,ปีที่แล้ว
+嫌い,きらい,dislike,ไม่ชอบ
+切る,きる,to cut; to hang up (a phone),ตัด; วางสาย (โทรศัพท์)
+着る,きる,to put on (clothes above your waist); to wear,สวมใส่ (เสื้อผ้าที่อยู่เหนือเอวของคุณ); ที่จะสวมใส่
+綺麗,きれい,"pretty, clean, tidy",สวย สะอาด เป็นระเบียบเรียบร้อย
+キロ,キロ,(abbr.) kilo (kilogram),(คำย่อ) กิโล (กิโลกรัม)
 銀行,ぎんこう,bank,ธนาคาร
-郵便局,ゆうびんきょく,post office,ไปรษณีย์
+金曜日,きんようび,Friday,วันศุกร์
+薬,くすり,medicine,ยา
+下さい,ください,(with te-form verb) please do for me,(มีกริยารูปเต) กรุณาทำเพื่อฉันด้วย
+果物,くだもの,fruit,ผลไม้
+口,くち,job opening; mouth,การเปิดงาน; ปาก
+靴,くつ,"shoes, footwear","รองเท้า, รองเท้า"
+靴下,くつした,socks,ถุงเท้า
+国,くに,country; place of origin,ประเทศ; สถานที่กำเนิด
+曇り,くもり,"cloudiness, cloudy weather",ท้องฟ้ามีเมฆมาก
+曇る,くもる,"to become cloudy, to become dim",กลายเป็นเมฆมาก กลายเป็นสลัว
+暗い,くらい,"dark, gloomy",มืดมนมืดมน
+クラス,クラス,a class,คลาส
+グラム,グラム,gram,กรัม
+来る,くる,to come,มาแล้วจ้า
+車,くるま,"car, vehicle",รถยนต์ ยานพาหนะ
+黒,くろ,black,สีดำ
+黒い,くろい,black; dark,สีดำ; มืด
+警官,けいかん,police officer,เจ้าหน้าที่ตำรวจ
+今朝,けさ,this morning,เช้านี้
+消す,けす,"to erase, to delete, to turn off power","เพื่อลบ, ลบ, ปิดเครื่อง"
+結構,けっこう,"splendid; enough, tolerably",งดงาม; เพียงพอแล้ว
+月曜日,げつようび,Monday,วันจันทร์
+玄関,げんかん,entrance (to a house or a building),ทางเข้า (ไปบ้านหรืออาคาร)
+元気,げんき,"health(y), energetic",สุขภาพ(y) มีพลัง
+公園,こうえん,a park,สวนสาธารณะ
+交差点,こうさてん,intersection,ทางแยก
+紅茶,こうちゃ,black tea,ชาดำ
+交番,こうばん,police box,ป้อมตำรวจ
+声,こえ,voice,เสียง
+コート,コート,"coat; court (e.g., tennis)",เสื้อโค้ท; สนาม (เช่น เทนนิส)
+コーヒー,コーヒー,coffee,กาแฟ
+ここ,ここ,"here, this place",ที่นี่ ที่นี่
+午後,ごご,"afternoon, P.M.",ช่วงบ่าย P.M.
+九日,ここのか,nine days; ninth day of the month,เก้าวัน; วันที่เก้าของเดือน
+九つ,ここのつ,nine things,เก้าสิ่ง
+午前,ごぜん,"morning, A.M.",เช้า A.M.
+答える,こたえる,"to answer, to reply",เพื่อตอบเพื่อตอบ
+こちら,こちら,this person (polite); this way (polite),บุคคลนี้ (สุภาพ); ทางนี้(สุภาพ)
+こっち,こっち,this person; this direction; this side,คนนี้; ทิศทางนี้; ด้านนี้
+コップ,コップ,a tumbler; a glass,แก้วน้ำ; แก้ว
+今年,ことし,this year,ปีนี้
+言葉,ことば,language; word(s); expression(s),ภาษา; คำ); การแสดงออก
+子供,こども,child(ren),เด็ก(เรน)
+この,この,this,นี้
+御飯,ごはん,rice (cooked); meal,ข้าว (ปรุงสุก); มื้ออาหาร
+コピーする,コピーする,to copy,เพื่อคัดลอก
+困る,こまる,"to be bothered, to have difficulty",ลำบากใจ
+これ,これ,this one,อันนี้
+今月,こんげつ,this month,เดือนนี้
+今週,こんしゅう,this week,สัปดาห์นี้
+こんな,こんな,"such, like this",เช่นนี้
+今晩,こんばん,"tonight, this evening",คืนนี้ เย็นนี้
+さあ,さあ,"come now, well",เอาล่ะ
+財布,さいふ,wallet,กระเป๋าเงิน
+魚,さかな,fish,ปลา
+先,さき,"future; recent, previous",อนาคต; ล่าสุด ก่อนหน้า
+咲く,さく,to bloom,ที่จะเบ่งบาน
+作文,さくぶん,essay; composition,เรียงความ; องค์ประกอบ
+差す,さす,"to raise (stretch out) hands, to raise (e.g., umbrella)",ยก (ยืดออก) มือ ยก (เช่น ร่ม)
+雑誌,ざっし,"magazine, journal",นิตยสารวารสาร
+砂糖,さとう,sugar,น้ำตาล
+寒い,さむい,cold (in reference to weather),หนาว (อ้างอิงถึงสภาพอากาศ)
+さ来年,さらいねん,year after next,ปีหน้า
+三,さん,three,สาม
+塩,しお,salt,เกลือ
+しかし,しかし,however; but,อย่างไรก็ตาม; แต่
+時間,じかん,time,เวลา
+仕事,しごと,"work, job, occupation, employment",งาน งาน อาชีพ การจ้างงาน
+辞書,じしょ,dictionary,พจนานุกรม
+静か,しずか,"quiet, calm",เงียบสงบ
+下,した,"under, below, beneath",ข้างใต้ ข้างใต้
+七,しち,seven,เจ็ด
+質問,しつもん,"question, inquiry","คำถาม, สอบถาม"
+自転車,じてんしゃ,bicycle,จักรยาน
+自動車,じどうしゃ,automobile,รถยนต์
+死ぬ,しぬ,to die,ที่จะตาย
+字引,じびき,dictionary,พจนานุกรม
+自分,じぶん,"myself, oneself",ตัวฉันเอง
+閉まる,しまる,"to close, to be closed","ปิด, ปิด"
+閉める,しめる,"to close, to shut","ปิด, ปิด"
+締める,しめる,"to tie, to fasten, to tighten","ผูก, ยึด, กระชับ"
+じゃ,じゃ,"well, well then",เอาล่ะ
+写真,しゃしん,a picture; a photograph,รูปภาพ; ภาพถ่าย
+シャツ,シャツ,shirt,เสื้อ
+シャワー,シャワー,shower,ฝักบัว
+十,じゅう,ten,สิบ
+授業,じゅぎょう,a class (of school),ชั้นเรียน (ของโรงเรียน)
+宿題,しゅくだい,homework,การบ้าน
+上手,じょうず,"be good at, skillful",เก่งเก่ง
+丈夫,じょうぶ,"strong, solid, durable",แข็งแรง ทนทาน
+醤油,しょうゆ,soy sauce,ซีอิ๊ว
+食堂,しょくどう,"cafeteria, dining hall","โรงอาหาร, ห้องอาหาร"
+知る,しる,"to know, to understand",รู้เข้าใจ
+白,しろ,white,สีขาว
+白い,しろい,white,สีขาว
+新聞,しんぶん,newspaper,หนังสือพิมพ์
+水曜日,すいようび,Wednesday,วันพุธ
+吸う,すう,"to breathe in, to suck","หายใจเข้า, ดูด"
+スカート,スカート,skirt,กระโปรง
+好き,すき,"liking, fondness, love",ความชอบ ความชื่นชอบ ความรัก
+少ない,すくない,a little; a few,เล็กน้อย; บางส่วน
+すぐに,すぐに,"immediately, soon",ทันที เร็วๆ นี้
+少し,すこし,"little, few",น้อยไม่กี่
+涼しい,すずしい,"cool, refreshing (in reference to weather)",เย็นสดชื่น (ตามสภาพอากาศ)
+ストーブ,ストーブ,heater (lit: stove),เครื่องทำความร้อน (ไฟ: เตา)
+スプーン,スプーン,spoon,ช้อน
+スポーツ,スポーツ,sport(s),กีฬา
+ズボン,ズボン,trousers,กางเกง
+住む,すむ,"to reside, to live in","ที่จะอาศัยอยู่, ที่จะอยู่ใน"
+する,する,"to do, to try; to wear small items (e.g., necktie, watch, etc.)",ต้องทำ พยายาม; ใส่สิ่งของชิ้นเล็กๆ (เช่น เนคไท นาฬิกา ฯลฯ)
+座る,すわる,to sit,นั่ง
+背,せい,"(one's) height, stature",ส่วนสูง ส่วนสูง
+生徒,せいと,student; pupil,นักเรียน; นักเรียน
+セーター,セーター,sweater,เสื้อกันหนาว
+石鹸,せっけん,soap,สบู่
+背広,せびろ,men's suit,สูทผู้ชาย
+狭い,せまい,narrow; not spacious,แคบ; ไม่กว้างขวาง
+ゼロ,ゼロ,zero,ศูนย์
+千,せん,thousand,พัน
+先月,せんげつ,last month,เมื่อเดือนที่แล้ว
+先週,せんしゅう,last week,สัปดาห์ที่แล้ว
+先生,せんせい,"teacher, professor; master; doctor","ครู, ศาสตราจารย์; ผู้เชี่ยวชาญ; หมอ"
+洗濯,せんたく,"washing, laundry",ซักอบรีด
+全部,ぜんぶ,"all, entire, whole",ทั้งหมด ทั้งหมด ทั้งหมด
+そう,そう,"yes; appears, to be the case",ใช่; ปรากฏเป็นกรณีนี้
+そうして,そうして,"and, like that",และเช่นนั้น
+そこ,そこ,"that place, there; bottom, sole",ที่นั่น ที่นั่น ด้านล่าง แต่เพียงผู้เดียว
+そちら,そちら,over there,ตรงนั้น
+そっち,そっち,over there,ตรงนั้น
+外,そと,"outside, exterior",ภายนอก ภายนอก
+その,その,that,นั่น
+そば,そば,"near, close, beside; Japanese traditional buckwheat noodle","ใกล้, ปิด, ข้าง; บะหมี่บัควีทแบบดั้งเดิมของญี่ปุ่น"
+空,そら,sky,ท้องฟ้า
+それ,それ,that one,อันนั้น
+それから,それから,"and then, after that",และหลังจากนั้น
+それでは,それでは,"in that situation, well then...",ในสถานการณ์นั้น ก็...
+大学,だいがく,college; university,วิทยาลัย; มหาวิทยาลัย
+大使館,たいしかん,embassy,สถานทูต
+大丈夫,だいじょうぶ,It's ok (all right); No need to worry; Everything is under control,ไม่เป็นไร (เอาล่ะ); ไม่ต้องกังวล ทุกอย่างอยู่ภายใต้การควบคุม
+大好き,だいすき,"very like-able, like very much",ชอบมาก ชอบมาก
+大切,たいせつ,important,สำคัญ
+台所,だいどころ,kitchen,ห้องครัว
+大変,たいへん,"very; difficult, hard",มาก; ยาก ยาก
+高い,たかい,"tall, high; expensive",สูง สูง; แพง
+沢山,たくさん,"many, much",มากมาย มาก
+タクシー,タクシー,taxi,แท็กซี่
+出す,だす,to take (something) out; to hand in (something),นำ (บางสิ่ง) ออกไป; เพื่อมอบ (บางสิ่ง)
+立つ,たつ,to stand up,ที่จะยืนขึ้น
+たて,たて,"length, height",ความยาว ความสูง
+建物,たてもの,building,อาคาร
+楽しい,たのしい,"enjoyable, fun",สนุกสนาน สนุกสนาน
+頼む,たのむ,"to request, to ask (a favor)","ขอ, ขอ (ความโปรดปราน)"
+たばこ,たばこ,"tobacco, cigarettes",ยาสูบ บุหรี่
+多分,たぶん,"perhaps, probably, maybe",บางที อาจจะ อาจจะ
+食べ物,たべもの,food,อาหาร
+食べる,たべる,to eat,กิน
+卵,たまご,egg,ไข่
+誰,だれ,who,ใคร
+誰か,だれか,someone,บางคน
+誕生日,たんじょうび,birthday,วันเกิด
+段々,だんだん,"gradually, by degrees",ค่อยๆ ทีละองศา
+小さい,ちいさい,"small, little",เล็ก น้อย
+小さな,ちいさな,"small, little",เล็ก น้อย
+近い,ちかい,"near, close by, short",ใกล้ ใกล้ สั้น
+違う,ちがう,to be different; to differ; wrong,จะแตกต่าง; แตกต่าง; ผิด
+近く,ちかく,nearby; in the neighborhood,ใกล้เคียง; ในบริเวณใกล้เคียง
+地下鉄,ちかてつ,"underground train, subway","รถไฟใต้ดิน, รถไฟใต้ดิน"
+地図,ちず,a map,แผนที่
+父,ちち,(my) father,(ของฉัน) พ่อ
+茶色,ちゃいろ,brown,สีน้ำตาล
+茶碗,ちゃわん,rice bowl,ชามข้าว
+丁度,ちょうど,"just, right, exactly",เพียง ถูกต้อง อย่างแน่นอน
+ちょっと,ちょっと,"a little, somewhat; just a little, somewhat",เล็กน้อยบ้าง; เพียงเล็กน้อยบ้าง
+使う,つかう,to use,การใช้
+疲れる,つかれる,to get (become) tired; to become fatigued,เหนื่อย (เหนื่อย) เหนื่อยจัง
+次,つぎ,next,ถัดไป
+着く,つく,"to arrive at, to reach","ไปถึง, ไปถึง"
+机,つくえ,desk,โต๊ะทำงาน
+作る,つくる,"to make, to create","เพื่อสร้าง, เพื่อสร้าง"
+つける,つける,"to turn on (e.g., a light); to take",เพื่อเปิด (เช่น ไฟ); ที่จะใช้
+勤める,つとめる,to work (for),ไปทำงาน (สำหรับ)
+つまらない,つまらない,"boring, dull; insignificant",น่าเบื่อน่าเบื่อ; ไม่มีนัยสำคัญ
+冷たい,つめたい,"cold (things, people)","เย็น (สิ่งของ, คน)"
+強い,つよい,"strong, powerful",แข็งแกร่งทรงพลัง
+テープ,テープ,tape,เทป
+テープレコーダー,テープレコーダー,tape recorder,เครื่องบันทึกเทป
+テーブル,テーブル,table,ตาราง
+出かける,でかける,to go out; to depart,ออกไป; ที่จะออกเดินทาง
+手紙,てがみ,letter,จดหมาย
+できる,できる,to be able to (to accomplish),เพื่อให้สามารถ (บรรลุผล)
+出口,でぐち,an exit,ทางออก
+テスト,テスト,test,ทดสอบ
+では,では,"then, well, so",ถ้าอย่างนั้นก็อย่างนั้น
+デパート,デパート,(abbr.) department store,(คำย่อ) ห้างสรรพสินค้า
+でも,でも,"but, however",แต่อย่างไรก็ตาม
+出る,でる,"to appear, to leave",ปรากฏขึ้นเพื่อออก
+テレビ,テレビ,"television, TV","โทรทัศน์, ทีวี"
+天気,てんき,weather,สภาพอากาศ
+電気,でんき,"electricity, (electric) light","ไฟฟ้า, (ไฟฟ้า) แสง"
+電車,でんしゃ,electric train,รถไฟฟ้า
+電話,でんわ,a telephone,โทรศัพท์
+ドア,ドア,door (Western style),ประตู(แบบตะวันตก)
+トイレ,トイレ,bathroom; toilet,ห้องน้ำ; ห้องน้ำ
+どう,どう,"how, in what way",อย่างไร อย่างไร
+どうして,どうして,"why, for what reason",ทำไม เพราะอะไร
+どうぞ,どうぞ,"please, kindly, by all means",ได้โปรดกรุณาด้วยทุกวิถีทาง
+動物,どうぶつ,animal,สัตว์
+どうも,どうも,Thank you; somehow; no matter how hard one may try,ขอบคุณ; อย่างใด; ไม่ว่าจะพยายามแค่ไหน
+遠い,とおい,"far (away), distant",ไกล (ออกไป) ห่างไกล
+十日,とおか,ten days; tenth day of the month,สิบวัน; วันที่สิบของเดือน
+時々,ときどき,sometimes,บางครั้ง
+時計,とけい,a watch; a clock,นาฬิกา; นาฬิกา
+どこ,どこ,"where, what place",ที่ไหน สถานที่อะไร
+所,ところ,place,สถานที่
+年,とし,"year, age","ปี, อายุ"
 図書館,としょかん,library,ห้องสมุด
-美術館,びじゅつかん,art museum,พิพิธภัณฑ์ศิลปะ
-病院,びょういん,hospital,โรงพยาบาล
-駅,えき,station,สถานีรถไฟ
-いくら,いくら,how much,เท่าไหร่
-いつも,いつも,always,เสมอ
-これ,これ,this,นี่
-それ,それ,that,นั่น
-あれ,あれ,that over there,โน่น
-どこ,どこ,where,ที่ไหน
-だれ,だれ,who,ใคร
-いつ,いつ,when,เมื่อไหร่
-どうして,どうして,why,ทำไม
-とても,とても,very,มาก
-ちょっと,ちょっと,a little,นิดหน่อย
-ゆっくり,ゆっくり,slowly,ช้าๆ
-あそこ,あそこ,over there,ที่โน่น
-あっち,あっち,that way,ทางโน้น
-こっち,こっち,this way,ทางนี้
-そっち,そっち,that way,ทางนั้น
-どっち,どっち,which way,ทางไหน
-どなた,どなた,who (polite),ใคร (สุภาพ)
+どちら,どちら,which (one) (way); where (polite),ซึ่ง (หนึ่ง) (ทาง); ที่ไหน (สุภาพ)
+どっち,どっち,"which one, which way",อันไหนทางไหน
+とても,とても,"very (much), greatly, exceedingly","มาก (มาก), อย่างมาก, อย่างยิ่ง"
+どなた,どなた,who,ใคร
+隣,となり,"next to, next door to",ข้างๆ ข้างๆ
+どの,どの,which,ซึ่ง
+飛ぶ,とぶ,"to fly, to hop","บิน, กระโดด"
+止まる,とまる,to come to a halt,ต้องหยุดชะงัก
+友達,ともだち,friend,เพื่อน
+土曜日,どようび,Saturday,วันเสาร์
+鳥,とり,"chicken (lit., bird)",ไก่ (ไฟ. นก)
+鶏肉,とりにく,chicken meat,เนื้อไก่
+取る,とる,to take (a class); to get (a grade),เข้าเรียน (ชั้นเรียน); เพื่อให้ได้ (เกรด)
+撮る,とる,"to take (a photo), to make (a film)",ถ่ายรูป (ภาพถ่าย) จัดทำ (ภาพยนตร์)
 どれ,どれ,which one,อันไหน
-
+どんな,どんな,"what, what kind of",อะไร แบบไหน
+ない,ない,"there isn't, doesn't have",ไม่มี ไม่มี
+ナイフ,ナイフ,knife,มีด
+中,なか,"inside, middle, among","ภายใน, กลาง, หมู่"
+長い,ながい,"long, lengthy","ยาว, ยาว"
+鳴く,なく,to make sound (animal),ทำเสียง (สัตว์)
+無くす,なくす,to lose something,การสูญเสียบางสิ่งบางอย่าง
+なぜ,なぜ,why (same as どうして),ทำไม (เหมือนกับ どうして)
+夏,なつ,summer,ฤดูร้อน
+夏休み,なつやすみ,summer vacation,วันหยุดฤดูร้อน
+七つ,ななつ,seven things,เจ็ดสิ่ง
+何,なん,what,อะไร
+七日,なのか,seven days; seventh day (of the month),เจ็ดวัน; วันที่เจ็ด (ของเดือน)
+名前,なまえ,name,ชื่อ
+習う,ならう,to learn,เพื่อเรียนรู้
+並ぶ,ならぶ,"to line up, to stand in a line (v.i.)","เข้าแถว, ยืนเข้าแถว (vi.)"
+並べる,ならべる,to put (things) side by side; to line up,วาง (สิ่งของ) ไว้เคียงข้างกัน เข้าแถว
+なる,なる,to become,ที่จะกลายเป็น
+にぎやか,にぎやか,"bustling, busy",คึกคัก วุ่นวาย
+肉,にく,meat,เนื้อ
+西,にし,west,ตะวันตก
+日曜日,にちようび,Sunday,วันอาทิตย์
+荷物,にもつ,luggage; baggage,กระเป๋าเดินทาง; สัมภาระ
+ニュース,ニュース,news,ข่าว
+庭,にわ,garden,สวน
+脱ぐ,ぬぐ,to take off (clothes),ถอด (เสื้อผ้า)
+温い,ぬるい,lukewarm,อุ่นๆ
+ネクタイ,ネクタイ,"tie, necktie",เนคไท เนคไท
+猫,ねこ,cat,แมว
+寝る,ねる,to sleep; to go to sleep; to go to bed,นอน; ไปนอน; ไปนอน
+ノート,ノート,notebook,สมุดบันทึก
+登る,のぼる,to climb,ที่จะปีน
+飲み物,のみもの,"drink, beverage",ดื่มเครื่องดื่ม
+飲む,のむ,to drink,ดื่ม
+乗る,のる,"to get on, to ride in, to board",ขึ้น ขึ้นรถ ขึ้นรถ
+パーティー,パーティー,a party,ปาร์ตี้
+はい,はい,yes,ใช่
+灰皿,はいざら,ashtray,ที่เขี่ยบุหรี่
+入る,はいる,"to enter, to contain, to hold","เข้าไป, บรรจุ, ถือ"
+葉書,はがき,postcard,โปสการ์ด
+はく,はく,to put on (items below your waist),ที่จะสวมใส่ (รายการที่อยู่ต่ำกว่าเอวของคุณ)
+箱,はこ,box,กล่อง
+橋,はし,bridge,สะพาน
+箸,はし,chopsticks,ตะเกียบ
+始まる,はじまる,(something) begins,(บางสิ่ง) เริ่มต้น
+初め,はじめ,"beginning, start",เริ่ม เริ่ม
+初めて,はじめて,for the first time,เป็นครั้งแรก
+走る,はしる,to run,เพื่อทำงาน
+バス,バス,bus; bath; bass,รสบัส; อาบน้ำ; เบส
+バター,バター,butter,เนย
+二十歳,はたち,20 years old,อายุ 20 ปี
+働く,はたらく,to work,ไปทำงาน
+八,はち,eight,แปด
+二十日,はつか,"twenty days, twentieth (day of the month)",ยี่สิบวันที่ยี่สิบ (วันของเดือน)
+花,はな,flower,ดอกไม้
+鼻,はな,nose,จมูก
+話,はなし,"talk (chat), story",พูดคุย (แชท) เรื่องราว
+話す,はなす,to speak,พูด
+母,はは,(my) mother,(ของฉัน) แม่
+早い,はやい,early,ต้น
+速い,はやい,"fast, quick",รวดเร็ว ทันใจ
+春,はる,spring,ฤดูใบไม้ผลิ
+貼る,はる,to post; to paste; to attach,โพสต์; วาง; เพื่อแนบ
+晴れ,はれ,clear (sunny) weather,อากาศแจ่มใส (แดดแรง)
+晴れる,はれる,to be sunny,ให้มีแดด
+半,はん,"half (e.g., にじはん | half-past two)",ครึ่ง (เช่น にじHAん | สองทุ่มครึ่ง)
+晩,ばん,evening,ตอนเย็น
+パン,パン,bread,ขนมปัง
+ハンカチ,ハンカチ,handkerchief,ผ้าเช็ดหน้า
+番号,ばんごう,"number, series of digits",หมายเลข ชุดตัวเลข
+晩御飯,ばんごはん,"dinner, evening meal",มื้อเย็น มื้อเย็น
+半分,はんぶん,half,ครึ่ง
+東,ひがし,east,ทิศตะวันออก
+引く,ひく,"to pull, to draw; subtract","ดึง, วาด; ลบ"
+弾く,ひく,to play (a string instrument or piano),เล่น (เครื่องสายหรือเปียโน)
+低い,ひくい,"short, low",สั้นต่ำ
+飛行機,ひこうき,airplane,เครื่องบิน
+左,ひだり,left hand side,ด้านซ้ายมือ
+人,ひと,"man, person",ผู้ชาย คน
+一つ,ひとつ,one thing,สิ่งหนึ่ง
+一月,ひとつき,one month,หนึ่งเดือน
+一人,ひとり,one person,คนหนึ่ง
+暇,ひま,"free time, leisure",เวลาว่าง พักผ่อน
+百,ひゃく,hundred,ร้อย
+病院,びょういん,hospital,โรงพยาบาล
+病気,びょうき,illness; sickness,การเจ็บป่วย; ความเจ็บป่วย
+平仮名,ひらがな,hiragana,ฮิระงะนะ
+昼,ひる,"noon, daytime",เที่ยงวัน
+昼御飯,ひるごはん,"lunch, midday meal","มื้อเที่ยง, มื้อเที่ยง"
+広い,ひろい,spacious; wide; broad,กว้างขวาง; กว้าง; กว้าง
+フィルム,フィルム,film (roll of),ฟิล์ม (ม้วน)
+封筒,ふうとう,envelope,ซองจดหมาย
+プール,プール,swimming pool,สระว่ายน้ำ
+フォーク,フォーク,fork,ส้อม
+吹く,ふく,"to blow (wind, etc.)",พัด (ลม ฯลฯ )
+服,ふく,clothes,เสื้อผ้า
+二つ,ふたつ,two things,สองสิ่ง
+豚肉,ぶたにく,pork,หมู
+二人,ふたり,two people,คนสองคน
+二日,ふつか,two days; second day of the month,สองวัน; วันที่สองของเดือน
+太い,ふとい,"fat, thick",อ้วนหนา
+冬,ふゆ,winter,ฤดูหนาว
+降る,ふる,"to precipitate, to fall (e.g., rain, snow, etc.)",ตกตะกอน (เช่น ฝน หิมะ ฯลฯ)
+古い,ふるい,"old (in reference to objects, not people), aged, ancient",เก่า (อ้างอิงถึงวัตถุ ไม่ใช่คน) เก่า โบราณ
+文章,ぶんしょう,"sentence, text",ประโยค ข้อความ
+ページ,ページ,a page,หน้า
+下手,へた,"unskillful, poor","ไร้ฝีมือ, ยากจน"
+ベッド,ベッド,bed,เตียง
+ペット,ペット,pet,สัตว์เลี้ยง
+部屋,へや,a room,ห้องหนึ่ง
+辺,へん,"area, vicinity",พื้นที่ใกล้เคียง
+ペン,ペン,pen,ปากกา
+便利,べんり,"convenient, handy",สะดวก พกพา
+帽子,ぼうし,hat; cap,หมวก; หมวก
+ボールペン,ボールペン,ball-point pen,ปากกาลูกลื่น
+ポケット,ポケット,pocket,กระเป๋า
+欲しい,ほしい,"to want, in need of","ต้องการ, ต้องการ"
+ポスト,ポスト,"mailbox; post, position",ตู้ไปรษณีย์; โพสต์ตำแหน่ง
+細い,ほそい,"thin, slender, fine",ผอมเพรียวเพรียว
+ボタン,ボタン,button,ปุ่ม
+ホテル,ホテル,hotel,โรงแรม
+本,ほん,book,หนังสือ
+本棚,ほんだな,bookshelf,ชั้นวางหนังสือ
+本当,ほんとう,"real, true",จริง จริง
+毎朝,まいあさ,every morning,ทุกเช้า
+毎月,まいげつ,"every month, monthly",ทุกเดือน ทุกเดือน
+毎週,まいしゅう,every week,ทุกสัปดาห์
+毎日,まいにち,every day,ทุกวัน
+毎年,まいねん,"every year, yearly, annually",ทุกปี ทุกปี ทุกปี
+毎晩,まいばん,every night,ทุกคืน
+前,まえ,"before, in front",ก่อน ข้างหน้า
+曲る,まがる,"to turn, to bend",เลี้ยวโค้ง
+まずい,まずい,"terrible (in reference to food), unappetizing, unpleasant (taste)","แย่มาก (หมายถึงอาหาร), ไม่น่ารับประทาน, ไม่พึงประสงค์ (รสชาติ)"
+また,また,and; furthermore,และ; นอกจากนี้
+まだ,まだ,"yet, still, besides",แต่ถึงกระนั้น นอกจาก
+町,まち,town; city,เมือง; เมือง
+待つ,まつ,to wait,รอ
+まっすぐ,まっすぐ,"straight (ahead), direct",ตรง (ข้างหน้า) ตรง
+マッチ,マッチ,match,จับคู่
+窓,まど,window,หน้าต่าง
+丸い,まるい,"round, circular","กลม, กลม"
+万,まん,ten thousand,หมื่น
+万年筆,まんねんひつ,fountain pen,ปากกาหมึกซึม
+磨く,みがく,to brush (teeth); to polish,แปรงฟัน (ฟัน); ขัดเงา
+右,みぎ,right hand side,ด้านขวามือ
+短い,みじかい,short (length),สั้น (ความยาว)
+水,みず,water,น้ำ
+店,みせ,"store, shop","ร้านค้า, ร้านค้า"
+見せる,みせる,"to show, to display",เพื่อแสดงเพื่อแสดง
+道,みち,"road, street; way, directions","ถนน, ถนน; ทาง, ทิศทาง"
+三日,みっか,"three days, third day of the month",สามวัน วันที่สามของเดือน
+三つ,みっつ,three things,สามสิ่ง
+緑,みどり,green,เขียว
+皆さん,みなさん,"all of you, everyone",ทุกท่าน ทุกคน
+南,みなみ,South,ใต้
+耳,みみ,ear,หู
+見る,みる,"to see, to look",เพื่อดูเพื่อดู
+みんな,みんな,"all, everyone, everybody",ทั้งหมด ทุกคน ทุกคน
+六日,むいか,six days; sixth day of month,หกวัน; วันที่หกของเดือน
+向こう,むこう,"beyond, over there",ไกลออกไป ตรงนั้น
+難しい,むずかしい,difficult,ยาก
+六つ,むっつ,six things,หกสิ่ง
+村,むら,village,หมู่บ้าน
+メートル,メートル,meter,เมตร
+眼鏡,めがね,eye glasses,แว่นสายตา
+もう,もう,already; again; more,เรียบร้อยแล้ว; อีกครั้ง; เพิ่มเติม
+木曜日,もくようび,Thursday,พฤหัสบดี
+もしもし,もしもし,Hello? (used on the phone),สวัสดี? (ใช้บนโทรศัพท์)
+持つ,もつ,"to hold, to carry; to possess","ถือ, พกพา; ที่จะครอบครอง"
+もっと,もっと,more,เพิ่มเติม
+物,もの,thing (concrete object),สิ่ง (วัตถุคอนกรีต)
+門,もん,gate,ประตู
+問題,もんだい,a problem,ปัญหา
+八百屋,やおや,greengrocer,พ่อพันธุ์แม่พันธุ์
+野菜,やさい,vegetable,ผัก
+易しい,やさしい,"easy, plain, simple",ง่าย ธรรมดา เรียบง่าย
+安い,やすい,inexpensive; cheap (things),ราคาไม่แพง; ราคาถูก (สิ่งของ)
+休み,やすみ,holiday; day off; absence,วันหยุด; วันหยุด; ขาด
+休む,やすむ,"to rest, to have a break, to get time off",พักผ่อน พักผ่อน พักผ่อน
+八つ,やっつ,eight things,แปดสิ่ง
+山,やま,mountain,ภูเขา
+やる,やる,"to do; to give (to pets, parents, siblings, etc.)",ที่จะทำ; ให้ (แก่สัตว์เลี้ยง พ่อแม่ พี่น้อง ฯลฯ)
+夕方,ゆうがた,"late afternoon (typically just before dinner time), evening",ช่วงบ่าย (โดยทั่วไปก่อนเวลาอาหารเย็น) ตอนเย็น
+夕飯,ゆうはん,"dinner, supper, evening meal",มื้อเย็น มื้อเย็น มื้อเย็น
+郵便局,ゆうびんきょく,post office,ที่ทำการไปรษณีย์
+昨夜,ゆうべ,last night,เมื่อคืน
+有名,ゆうめい,famous,มีชื่อเสียง
+雪,ゆき,snow,หิมะ
+ゆっくりと,ゆっくりと,"slowly, at ease",ค่อยๆ สบายใจ
+八日,ようか,eight days; eighth day of the month,แปดวัน; วันที่แปดของเดือน
+洋服,ようふく,Western-style clothes,เสื้อผ้าสไตล์ตะวันตก
+よく,よく,"frequently, often (much); well, skillfully","บ่อยครั้ง, บ่อยครั้ง (มาก); ก็เก่งนะ"
+横,よこ,beside; side; width,ข้าง; ด้านข้าง; ความกว้าง
+四日,よっか,four days; fourth day of the month,สี่วัน; วันที่สี่ของเดือน
+四つ,よっつ,four things,สี่สิ่ง
+呼ぶ,よぶ,to call (one's name); to invite,โทร (ชื่อ); เพื่อเชิญ
+読む,よむ,to read,อ่าน
+夜,よる,"evening, night",ตอนเย็น กลางคืน
+弱い,よわい,weak,อ่อนแอ
+来月,らいげつ,next month,เดือนหน้า
+来週,らいしゅう,next week,สัปดาห์หน้า
+来年,らいねん,next year,ปีหน้า
+ラジオ,ラジオ,radio,วิทยุ
+ラジオカセ,ラジオカセ,radio cassette player,เครื่องเล่นเทปวิทยุ
+りっぱ,りっぱ,"splendid, fine",สุดยอดเลย
+留学生,りゅうがくせい,international student,นักเรียนต่างชาติ
+両親,りょうしん,"parents (lit., both parents)",พ่อแม่ (ตัวอักษรทั้งพ่อและแม่)
+料理,りょうり,cooking; cuisine,การทำอาหาร; อาหาร
+旅行,りょこう,"travel, trip",การเดินทางการเดินทาง
+零,れい,"zero, nought",ศูนย์ไม่มีอะไรเลย
+冷蔵庫,れいぞうこ,refrigerator,ตู้เย็น
+レコード,レコード,record,บันทึก
+レストラン,レストラン,restaurant,ร้านอาหาร
+廊下,ろうか,corridor,ทางเดิน
+六,ろく,six,หก
+ワイシャツ,ワイシャツ,"shirt (lit: white shirt), business shirt","เสื้อเชิ้ต (ตัวอักษร: เสื้อเชิ้ตสีขาว), เสื้อเชิ้ตธุรกิจ"
+若い,わかい,young,หนุ่ม
+分かる,わかる,to understand,ที่จะเข้าใจ
+忘れる,わすれる,to forget,เพื่อลืม
+私,わたし,"I, myself",ฉันเอง
+渡す,わたす,to hand (something) over (v.t.); to get across,มอบ (บางสิ่ง) ให้ (v.t.); เพื่อข้าม
+渡る,わたる,"to cross over, to go across","ข้าม, ข้าม"
+悪い,わるい,"bad, sinful; inferior",ไม่ดีบาป; ด้อยกว่า

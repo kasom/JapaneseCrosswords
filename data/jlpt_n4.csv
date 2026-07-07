@@ -1,45 +1,618 @@
 word,reading,meaning,thai_meaning
-案内する,あんないする,to guide,แนะนำ
-一生懸命,いっしょうけんめい,with utmost effort,พยายามอย่างเต็มที่
-贈り物,おくりもの,gift,ของขวัญ
-考える,かんがえる,to think,คิด
-準備する,じゅんびする,to prepare,เตรียมตัว
-連絡する,れんらくする,to contact,ติดต่อ
-特に,とくに,especially,โดยเฉพาะ
-役に立つ,やくにたつ,helpful,เป็นประโยชน์
-注意する,ちゅういする,to watch out,ระมัดระวัง
-複雑,ふくざつ,complicated,ซับซ้อน
-習慣,しゅうかん,custom,ขนบธรรมเนียม
-理由,りゆう,reason,เหตุผล
-関係,かんけい,relationship,ความสัมพันธ์
-紹介する,しょうかいする,to introduce,แนะนำตัว
-約束,やくそく,promise,สัญญา
-相談する,そうだんする,to consult,ปรึกษา
-説明する,せつめいする,to explain,อธิบาย
-反対する,はんたいする,to oppose,คัดค้าน
-賛成する,さんせいする,to agree,เห็นด้วย
-安全,あんぜん,safety,ปลอดภัย
-危険,きけん,danger,อันตราย
-心配する,しんぱいする,to worry,เป็นห่วง
-経験,けいけん,experience,ประสบการณ์
-技術,ぎじゅつ,technology,เทคโนโลยี
-科学,かがく,science,วิทยาศาสตร์
-将来,しょうらい,future,อนาคต
-歴史,れきし,history,ประวัติศาสตร์
+踏む,ふむ,"to step on, to tread on",ก้าวต่อไป ก้าวต่อไป
+すっと,すっと,"straight, quickly",ตรงไปอย่างรวดเร็ว
+盗む,ぬすむ,to steal; to rob,ขโมย; เพื่อปล้น
+大抵,たいてい,"generally, usually",โดยทั่วไปมักจะ
+とうとう,とうとう,"finally, at last",ในที่สุด
+ガソリン,ガソリン,"gasoline, petrol","น้ำมันเบนซิน, น้ำมันเบนซิน"
+鳴る,なる,"to sound, to ring (v.i.)","ส่งเสียง, ดัง (v.i.)"
+しっかり,しっかり,"firmly, steady",มั่นคง มั่นคง
+生きる,いきる,to live,ที่จะมีชีวิตอยู่
+苦い,にがい,bitter,ขม
+沸く,わく,"to boil, to grow hot",ต้มให้ร้อน
+意見,いけん,"opinion, view, idea",ความคิดเห็น มุมมอง ความคิด
+やはり,やはり,"as I thought, absolutely",อย่างที่ฉันคิดไว้อย่างแน่นอน
+漫画,まんが,"comic (book), cartoon",การ์ตูน (หนังสือ) การ์ตูน
+ステレオ,ステレオ,stereo,สเตอริโอ
+医学,いがく,medical science,วิทยาศาสตร์การแพทย์
+テキスト,テキスト,text; text book,ข้อความ; หนังสือเรียน
+折る,おる,"to snap, to break; to bend","หัก, หัก; ที่จะโค้งงอ"
+うかがう,うかがう,to ask,ถาม
+聞こえる,きこえる,"to be heard, to be audible","ที่จะได้ยิน, ที่จะได้ยิน"
+僕,ぼく,I (used by men towards those of equal or lower status),ฉัน (ผู้ชายใช้กับผู้ที่มีสถานะเท่ากันหรือต่ำกว่า)
+必ず,かならず,"surely, certainly",แน่นอนอย่างแน่นอน
+壊す,こわす,"to break, to break down","พัง, พัง"
+怒る,おこる,to get angry; to scold angrily,โกรธ; ดุอย่างโกรธ
+床屋,とこや,barber's (shop),ร้านตัดผม (ร้านค้า)
+オートバイ,オートバイ,motorcycle (lit: auto-bi(ke)),มอเตอร์ไซค์ (สว่าง: auto-bi(ke))
+運動,うんどうする,exercise,ออกกำลังกาย
+止む,やむ,"to cease, to stop",หยุดหยุด
+もし,もし,if,ถ้า
+表,おもて,surface; front; outside,พื้นผิว; ด้านหน้า; ภายนอก
+大学生,だいがくせい,"college student, university student","นักศึกษาวิทยาลัย, นักศึกษามหาวิทยาลัย"
+運転手,うんてんしゅ,driver (by occupation),คนขับ (ตามอาชีพ)
+予習,よしゅう,preparation of lessons (for class),การเตรียมบทเรียน (สำหรับชั้นเรียน)
+心配,しんぱいする,"worry, concern","กังวล, กังวล"
+別,べつ,"distinction, different",ความแตกต่าง แตกต่าง
+非常に,ひじょうに,extremely; very,อย่างที่สุด; มาก
+お宅,おたく,(someone else's) house; home -- polite word for 家 (いえ) --,บ้าน (ของคนอื่น) บ้าน -- คำสุภาพสำหรับ 家 (いえ) --
+柔らかい,やわらかい,"soft (in reference to texture), tender","นุ่ม (อ้างอิงถึงเนื้อสัมผัส), นุ่ม"
+拾う,ひろう,"to pick up (something), to find",หยิบ (บางสิ่ง) เพื่อค้นหา
+比べる,くらべる,to compare,เพื่อเปรียบเทียบ
+ほとんど,ほとんど,"mostly, almost",ส่วนใหญ่เกือบ
+つもり,つもり,"intention, plan",ความตั้งใจ แผน
+郊外,こうがい,"suburb, outskirts","ชานเมือง, นอกเมือง"
+だめ,だめ,"useless, no good, hopeless",ไร้ประโยชน์ ไม่ดี สิ้นหวัง
+売り場,うりば,place where things are sold,สถานที่ขายของ
+正月,しょうがつ,"New Year, New Year's Day",ปีใหม่ วันปีใหม่
+規則,きそく,"rule, regulation",กฎข้อบังคับ
+うん,うん,"yes (informal), all right (ok)",ใช่ (ไม่เป็นทางการ) เอาล่ะ (ตกลง)
+発音,はつおん,pronunciation,การออกเสียง
+焼く,やく,"to bake, to grill","อบ, ย่าง"
+屋上,おくじょう,rooftop,บนชั้นดาดฟ้า
+失礼,しつれい,"discourtesy, impoliteness; Excuse me",ความไม่สุภาพความไม่สุภาพ; ขออนุญาต
+ごみ,ごみ,"trash, garbage","ขยะ, ขยะ"
+アフリカ,アフリカ,Africa,แอฟริกา
+点,てん,"mark, score, grade; point, dot",ทำเครื่องหมาย คะแนน เกรด; จุด จุด
+一生懸命,いっしょうけんめい,"very hard (as in ""to work hard""), with utmost effort","ยากมาก (เช่นเดียวกับ ""ทำงานหนัก"") ด้วยความพยายามอย่างเต็มที่"
+今度,こんど,"now, this time, near future, one of these days, next time",ตอนนี้ คราวนี้ อนาคตอันใกล้ สักวันหนึ่ง คราวหน้า
+機会,きかい,"chance, opportunity",โอกาสโอกาส
+建てる,たてる,to build,เพื่อสร้าง
+複雑,ふくざつ,"complexity, complication",ความซับซ้อน ภาวะแทรกซ้อน
+彼,かれ,"he, boyfriend",เขา แฟน
+いらっしゃる,いらっしゃる,"-- honorific expression for いく, くる, and いる --","-- สำนวนแสดงเกียรติสำหรับ いく, くrum และ いた --"
+布団,ふとん,futon,ฟูก
+大事,だいじ,"important, valuable, serious matter",เรื่องสำคัญ มีคุณค่า เรื่องจริงจัง
+贈り物,おくりもの,a gift; a present,ของขวัญ; ของขวัญ
+泥棒,どろぼう,thief; burglar,ขโมย; หัวขโมย
+注意,ちゅうい,"caution, attention","ข้อควรระวัง, ความสนใจ"
+台風,たいふう,typhoon,พายุไต้ฝุ่น
+そう,そう,"really, (is that) so; yes, right",จริงๆ (เป็น) อย่างนั้น; ใช่แล้ว
+通る,とおる,"to pass (by), to go through",ผ่านไป (โดย) ผ่านไป
+過ぎる,すぎる,"to exceed, to go beyond","เกินกว่า, เกินกว่า"
+レポート,レポート,report,รายงาน
+必要,ひつよう,necessary,จำเป็น
+課長,かちょう,section manager,ผู้จัดการส่วน
+地震,じしん,earthquake,แผ่นดินไหว
+すると,すると,"and, then",แล้วก็
+止める,やめる,"to end, to stop",เพื่อสิ้นสุดเพื่อหยุด
+ガラス,ガラス,"glass, pane","กระจก, บานหน้าต่าง"
+厳しい,きびしい,hard; rigorous; strict,แข็ง; เข้มงวด; เข้มงวด
+エスカレーター,エスカレーター,escalator,บันไดเลื่อน
+人口,じんこう,population,ประชากร
+月,つき,moon,ดวงจันทร์
+絹,きぬ,silk,ไหม
+ちっとも,ちっとも,not at all (neg. verb),ไม่เลย (neg. กริยา)
+深い,ふかい,"deep, profound",ลึกซึ้ง ลึกซึ้ง
+壊れる,こわれる,"to be broken, to break","พัง, พัง"
+揺れる,ゆれる,"to shake, to sway",สั่นไหว
+落る,おちる,"to fall, to drop","ล้ม, หล่น"
+できるだけ,できるだけ,"if at all possible, as much as possible",ถ้าเป็นไปได้ให้มากที่สุด
+悲しい,かなしい,"sad, sorrowful",เศร้า เสียใจ
+中学校,ちゅうがっこう,junior high school pupil,นักเรียนมัธยมต้น
+ガス,ガス,gas,แก๊ส
+祈る,いのる,to pray; to wish,อธิษฐาน; ความปรารถนา
+盛ん,さかん,"prosperous, active, thriving",เจริญรุ่งเรือง กระตือรือร้น เจริญรุ่งเรือง
+アルバイト,アルバイト,part-time job,งานพาร์ทไทม์
+起こす,おこす,to wake (someone) up,เพื่อปลุก (บางคน) ให้ตื่น
+致す,いたす,-- extra-modest expression for する --,-- สำนวนที่สุภาพเป็นพิเศษสำหรับ sururu --
+噛む,かむ,"to bite, to chew","กัด, เคี้ยว"
+赤ちゃん,あかちゃん,"baby, infant",ที่รัก เด็กทารก
+浅い,あさい,"shallow, superficial",ตื้นผิวเผิน
+嘘,うそ,lie,โกหก
 小説,しょうせつ,novel,นวนิยาย
-いつも,いつも,always,เสมอ
-いくら,いくら,how much,เท่าไหร่
-これ,これ,this,นี่
-それ,それ,that,นั่น
-あれ,あれ,that over there,โน่น
-どこ,どこ,where,ที่ไหน
-だれ,だれ,who,ใคร
-いつ,いつ,when,เมื่อไหร่
-どうして,どうして,why,ทำไม
-たいてい,たいてい,usually,โดยทั่วไป
-ちっとも,ちっとも,not at all,ไม่เลย
-ゆっくり,ゆっくり,slowly,ช้าๆ
-はっきり,はっきり,clearly,ชัดเจน
-すっかり,すっかり,completely,โดยสิ้นเชิง
-やっぱり,やっぱり,as expected,อย่างที่คิดไว้
-やっと,やっと,at last,ในที่สุด
+親,おや,a parent,ผู้ปกครอง
+それに,それに,moreover; besides,นอกจากนี้; นอกจากนี้
+西洋,せいよう,"the West, Western countries","ตะวันตก, ประเทศตะวันตก"
+思う,おもう,"to think, to feel",คิดรู้สึก
+時代,じだい,"age, period, epoch, era",อายุ ยุคสมัย ยุคสมัย
+申し上げる,もうしあげる,"(humble)to say, to tell",(ถ่อมตัว)พูดบอก
+出席,しゅっせきする,attendance,การเข้าร่วม
+迎える,むかえる,to welcome; to meet; to greet,ยินดีต้อนรับ; พบกัน; ทักทาย
+触る,さわる,"to touch, to feel","สัมผัส, รู้สึก"
+社長,しゃちょう,president of a company,ประธานบริษัท
+動物園,どうぶつえん,zoo,สวนสัตว์
+捕まえる,つかまえる,"to catch, to arrest","จับ, จับกุม"
+季節,きせつ,season (in reference to weather),ฤดูกาล (อ้างอิงกับสภาพอากาศ)
+寄る,よる,to stop by,เพื่อแวะมา
+決まる,きまる,to be set; fixed (v.i.),ที่จะตั้งค่า; คงที่ (vi.)
+開く,ひらく,to open; to hold (an event),เพื่อเปิด; ที่จะถือ (เหตุการณ์)
+逃げる,にげる,"to escape, to run away","หนี, วิ่งหนี"
+だから,だから,so; therefore,ดังนั้น; ดังนั้น
+残念,ざんねん,regret; regrettable,เสียใจ; น่าเสียดาย
+畳,たたみ,tatami mat (Japanese straw mat),เสื่อทาทามิ (เสื่อฟางญี่ปุ่น)
+丁寧,ていねい,"polite, courteous, careful","สุภาพ, สุภาพ, ระมัดระวัง"
+地理,ちり,geography,ภูมิศาสตร์
+さっき,さっき,a little while ago,เมื่อสักครู่ที่ผ่านมา
+怖い,こわい,"scary, frightening",น่ากลัวน่ากลัว
+包む,つつむ,"to wrap, to cover",ห่อเพื่อปกปิด
+なるべく,なるべく,"if possible, as much as possible",ถ้าเป็นไปได้ให้มากที่สุด
+無理,むり,"unreasonable, impossible","ไม่สมเหตุสมผล, เป็นไปไม่ได้"
+サンドイッチ,サンドイッチ,sandwich,แซนด์วิช
+会議室,かいぎしつ,conference room,ห้องประชุม
+品物,しなもの,goods,สินค้า
+人形,にんぎょう,"doll, figure",ตุ๊กตาฟิกเกอร์
+利用,りよう,"use, utilization","การใช้, การใช้ประโยชน์"
+飾る,かざる,"to decorate, to adorn","ประดับ, ประดับ"
+恥ずかしい,はずかしい,"ashamed, embarrassed",เขินอาย
+用事,ようじ,business to take care of; tasks; errands,ธุรกิจที่ต้องดูแล งาน; ธุระ
+ビル,ビル,(abbr.) building,(คำย่อ) อาคาร
+けんかする,けんかする,quarrel,ทะเลาะวิวาท
+頑張る,がんばる,"to try one's best, to try hard, to persist",พยายามอย่างเต็มที่ พยายามอย่างหนัก อดทน
+投げる,なげる,"to pitch, to cast away","ขว้าง, โยนทิ้งไป"
+故障,こしょうする,breakdown,พัง
+力,ちから,"strength, power","ความแข็งแกร่ง, พลัง"
+受ける,うける,"to take (an examination, interview, etc.); to receive",ที่จะทำ (การสอบ สัมภาษณ์ ฯลฯ ); ที่จะได้รับ
+気分,きぶん,"feeling, mood",ความรู้สึก อารมณ์
+間違える,まちがえる,to make a mistake,ที่จะทำผิดพลาด
+そんな,そんな,"such, like that, that sort of",เช่นนั้น เช่นนั้น
+星,ほし,star,ดาว
+場合,ばあい,"case, situation",กรณี สถานการณ์
+やっと,やっと,"at last, finally",ในที่สุด ในที่สุดก็
+足りる,たりる,to be sufficient; to be enough,ให้เพียงพอ; ถึงจะเพียงพอ
+行う,おこなう,to carry out; to conduct (typically used in written language),ดำเนินการ; เพื่อดำเนินการ (โดยทั่วไปจะใช้ในภาษาเขียน)
+ぶどう,ぶどう,grapes,องุ่น
+無くなる,なくなる,"to disappear, to get lost","หายไป, หายไป"
+準備,じゅんびする,prepare,เตรียม
+世界,せかい,world,โลก
+住所,じゅうしょ,address; place of residence,ที่อยู่; ถิ่นที่อยู่
+再来月,さらいげつ,the month after next,เดือนถัดไป
+林,はやし,"woods, forest",ป่า ป่าไม้
+倍,ばい,double,สองเท่า
+痩せる,やせる,to lose weight,ลดน้ำหนัก
+線,せん,"line, wire",เส้นลวด
+戦争,せんそう,war,สงคราม
+決める,きめる,to decide (v.t.),ตัดสินใจ (v.t.)
+調べる,しらべる,to check; to look up; to inquire; to search,เพื่อตรวจสอบ; เงยหน้าขึ้นมอง; สอบถาม; เพื่อค้นหา
+寝坊,ねぼう,sleeping in late,นอนดึก
+パパ,パパ,"papa, daddy",พ่อ พ่อ
+光る,ひかる,"to shine, to glitter",ส่องแสงแวววาว
+夫,おっと,husband,สามี
+雲,くも,cloud,เมฆ
+坂,さか,"slope, hill",ความลาดชันเนินเขา
+飛行場,ひこうじょう,airport,สนามบิน
+柔道,じゅうどう,judo,ยูโด
+決して,けっして,never,ไม่เคย
+事務所,じむしょ,office,สำนักงาน
+連絡,れんらく,"communication, contact, connection",การสื่อสาร การติดต่อ การเชื่อมต่อ
+小学校,しょうがっこう,elementary school,โรงเรียนประถมศึกษา
+客,きゃく,"guest, customer",แขก ลูกค้า
+昔,むかし,old days; past,วันเก่า; อดีต
+美しい,うつくしい,"beautiful, lovely",สวย น่ารัก
+捨てる,すてる,"throw away (trash), dump, discard","ทิ้ง (ขยะ), ทิ้ง, ทิ้ง"
+なさる,なさる,-- honorific expression for する --,-- สำนวนแสดงความเคารพสำหรับ sururu --
+事,こと,"thing(s), matter(s), fact",สิ่งของ เรื่อง ข้อเท็จจริง
+どんどん,どんどん,quickly and steadily; at a rapid pace,อย่างรวดเร็วและมั่นคง อย่างรวดเร็ว
+試合,しあい,"match, game, competition",การแข่งขัน เกม การแข่งขัน
+適当,てきとう,"fitness, suitability",ฟิตเนส ความเหมาะสม
+素晴らしい,すばらしい,wonderful; terrific,มหัศจรรย์; ยอดเยี่ยมมาก
+美術館,びじゅつかん,"art gallery, art museum","หอศิลป์, พิพิธภัณฑ์ศิลปะ"
+文法,ぶんぽう,grammar,ไวยากรณ์
+終わり,おわり,end,จบ
+壁,かべ,wall,ผนัง
+一度,いちど,"once, one time",ครั้งหนึ่ง ครั้งหนึ่ง
+お礼,おれい,expression of gratitude; thanking; gift of appreciation; bow,การแสดงความรู้สึกขอบคุณ ขอบคุณ; ของขวัญแห่งความขอบคุณ โค้งคำนับ
+親切,しんせつ,kindness,ความเมตตา
+知らせる,しらせる,to notify,เพื่อแจ้งเตือน
+歯医者,はいしゃ,dentist,ทันตแพทย์
+熱心,ねっしん,enthusiasm,ความกระตือรือร้น
+始める,はじめる,"to start, to begin",เพื่อเริ่มต้นเพื่อเริ่มต้น
+もらう,もらう,to receive,ที่จะได้รับ
+泣く,なく,to cry,ร้องไห้
+治る,なおる,to get better; to recover from illness (v.i.),ให้ดีขึ้น; หายจากโรคภัยไข้เจ็บ (vi.)
+熱,ねつ,"fever, temperature",ไข้ อุณหภูมิ
+お祭り,おまつり,festival,เทศกาล
+水道,すいどう,"water service, water line",บริการน้ำประปา สายส่งน้ำ
+匂い,におい,"odor, smell",กลิ่นกลิ่น
+ベル,ベル,bell,กระดิ่ง
+赤ん坊,あかんぼう,baby,ที่รัก
+おかしい,おかしい,strange; odd; funny,แปลก; แปลก; ตลก
+事故,じこ,accident,อุบัติเหตุ
+変,へん,"strange, odd","แปลก, แปลก"
+辞典,じてん,"encyclopedia, reference book",สารานุกรม หนังสืออ้างอิง
+残る,のこる,"to remain (v.i.), to be left",ยังคงอยู่ (v.i.) ทิ้งไว้
+立てる,たてる,"to stand (something) up, to erect (something)",ยืน (บางสิ่ง) ขึ้น สร้าง (บางสิ่ง)
+くれる,くれる,"to give, to do for",ให้ทำเพื่อ
+原因,げんいん,"cause, origin, source",สาเหตุ ต้นกำเนิด แหล่งที่มา
+驚く,おどろく,"to be surprised, to be astonished",ต้องประหลาดใจ ต้องประหลาดใจ
+祖母,そぼ,grandmother,คุณย่า
+場所,ばしょ,"place, location","สถานที่, ที่ตั้ง"
+答,こたえ,"answer, response","ตอบ, ตอบ"
+もちろん,もちろん,"certainly, of course",แน่นอนแน่นอน
+漬ける,つける,"to soak, to moisten, to pickle","แช่, ชุบ, ดอง"
+受付,うけつけ,reception(ist) desk,แผนกต้อนรับ (ist) โต๊ะทำงาน
+内,うち,"within, inside","ภายใน, ภายใน"
+スクリーン,スクリーン,screen,หน้าจอ
+増える,ふえる,"to increase, to multiply","เพื่อเพิ่ม, คูณ"
+または,または,"or, otherwise",หรืออย่างอื่น
+けがする,けがする,"injury (to animate object), hurt",การบาดเจ็บ (เพื่อทำให้วัตถุเคลื่อนไหว) เจ็บ
+以下,いか,"less than, below",น้อยกว่า ต่ำกว่า
+選ぶ,えらぶ,to choose; to select,ที่จะเลือก; เพื่อเลือก
+心,こころ,"heart, mind",หัวใจจิตใจ
+サラダ,サラダ,salad,สลัด
+届ける,とどける,to deliver (v.t.),ส่งมอบ (v.t.)
+挨拶,あいさつする,greet(ing),ทักทาย(ไอเอ็นจี)
+景色,けしき,"scenery, landscape",ทิวทัศน์ ทิวทัศน์
+確か,たしか,"if I remember correctly; certain, definite",ถ้าฉันจำไม่ผิด; แน่นอนแน่นอน
+ステーキ,ステーキ,steak,สเต็ก
+食料品,しょくりょうひん,"foodstuff, groceries","อาหาร, ร้านขายของชำ"
+森,もり,forest,ป่า
+以内,いない,"within, less (no more) than",ภายใน น้อยกว่า (ไม่เกิน)
+予定,よてい,"plans, arrangement, schedule",แผน การจัดเตรียม กำหนดการ
+オーバー,オーバー,"overcoat; over, exceeding, exaggeration","เสื้อคลุม; เกินเลย, เกินจริง, เกินจริง"
+乾く,かわく,to get dry,ให้แห้ง
+石,いし,stone,หิน
+思い出す,おもいだす,"to recall, to remember","จำ, จำ"
+踊る,おどる,to dance,เต้น
+細かい,こまかい,"small; fine, minute",เล็ก; ได้เลย นาทีนี้
+塗る,ぬる,"to paint, to plaster","ทาสี, ฉาบปูน"
+ご主人,ごしゅじん,"(your, her) husband",(ของคุณเธอ) สามี
+珍しい,めずらしい,"unusual, rare","ไม่ธรรมดา, หายาก"
+用,よう,"errand, task, business (to take care of)",ธุระ งาน ธุระ (ที่ต้องดูแล)
+公務員,こうむいん,"government worker, public servant","ข้าราชการ, ข้าราชการ"
+お嬢さん,おじょうさん,(someone's) daughter (polite),(ของใครบางคน) ลูกสาว (สุภาพ)
+用意,ようい,preparation,การเตรียมตัว
+探す,さがす,"to search, to seek, to look for","เพื่อค้นหา, แสวงหา, มองหา"
+形,かたち,shape,รูปร่าง
+運転,うんてんする,driving,ขับรถ
+すっかり,すっかり,"all, completely",ทั้งหมดโดยสมบูรณ์
+アナウンサー,アナウンサー,announcer,ผู้ประกาศ
+お土産,おみやげ,souvenir,ของที่ระลึก
+消しゴム,けしゴム,eraser,ยางลบ
+旅館,りょかん,a Japanese inn,โรงแรมญี่ปุ่น
+海岸,かいがん,"coast, seashore",ชายฝั่งชายทะเล
+寂しい,さびしい,"lonely, lonesome",เหงา เหงา
+育てる,そだてる,to raise (v.t.); to bring up,ยก (v.t.); เพื่อนำมา
+味噌,みそ,"miso, bean paste","มิโซะ,ถั่วบด"
+お祝い,おいわい,"congratulation, celebration",การแสดงความยินดี การเฉลิมฉลอง
+乗り物,のりもの,vehicle,ยานพาหนะ
+案内,あんないする,"information, guidance",ข้อมูลคำแนะนำ
+通う,かよう,to go back and forth; to commute,กลับไปกลับมา; เพื่อเดินทาง
+連れる,つれる,"to lead, to take (a person)","เป็นผู้นำ, รับ (คน)"
+技術,ぎじゅつ,"technique, technology, skill",เทคนิค เทคโนโลยี ทักษะ
+小鳥,ことり,small bird,นกตัวเล็ก
+下宿,げしゅく,"lodging, boarding house","ที่พัก, หอพัก"
+ジャム,ジャム,jam,แยม
+招待,しょうたいする,invitation,คำเชิญ
+鏡,かがみ,mirror,กระจก
+はず,はず,it should be so,มันควรจะเป็นเช่นนั้น
+法律,ほうりつ,law,กฎหมาย
+進む,すすむ,"to advance, to proceed",เพื่อก้าวหน้าเพื่อดำเนินการต่อ
+楽む,たのしむ,to enjoy,เพลิดเพลินไปกับ
+貿易,ぼうえき,trade,ค้าขาย
+反対,はんたい,"oppose, opposition, resistance","ต่อต้าน, ต่อต้าน, ต่อต้าน"
+おる,おる,-- extra-modest expression for いる --,-- การแสดงออกที่เรียบง่ายเป็นพิเศษสำหรับ いรู --
+申す,もうす,-- extra-modest (humble) expression for 言う (いう) --,-- สำนวนที่ถ่อมตัวเป็นพิเศษ (ถ่อมตัว) สำหรับ 言本 (いう) --
+試験,しけん,an exam,การสอบ
+真面目,まじめ,"diligent, serious",ขยันจริงจัง
+店員,てんいん,clerk; shop-employee,พนักงาน; พนักงานร้าน
+泊まる,とまる,to stay (over night) (v.i.),อยู่ (ข้ามคืน) (vi.)
+よろしい,よろしい,"(hon.) good, OK, all right",(ที่รัก) ดี โอเค เอาล่ะ
+今夜,こんや,"this evening, tonight",เย็นนี้ คืนนี้
+おつり,おつり,change; balance of money returned to the purchaser,เปลี่ยน; ยอดเงินคงเหลือคืนให้กับผู้ซื้อ
+チェックする,チェックする,check,ตรวจสอบ
+会話,かいわ,conversation,บทสนทนา
+空気,くうき,"air, atmosphere",อากาศ บรรยากาศ
+交通,こうつう,"traffic, transportation",การจราจร การขนส่ง
+ワープロ,ワープロ,word processor,โปรแกรมประมวลผลคำ
+喜ぶ,よろこぶ,"to rejoice, to be delighted, to be glad","ชื่นชมยินดี, ชื่นชมยินดี"
+急行,きゅうこう,express train or bus,รถไฟด่วนหรือรถบัส
+皆,みな,everyone,ทุกคน
+味,あじ,"flavor, taste","รส, รส"
+空港,くうこう,airport,สนามบิน
+手袋,てぶくろ,glove(s),ถุงมือ
+校長,こうちょう,"principal, headmaster","ครูใหญ่, อาจารย์ใหญ่"
+ごちそう,ごちそう,"feast, treating (someone)",เลี้ยงฉลอง (บางคน)
+踊り,おどり,dance,เต้น
+興味,きょうみ,interest (in something),ความสนใจ (ในบางสิ่งบางอย่าง)
+引っ越す,ひっこす,to move to a new place of residence,เพื่อย้ายไปยังที่อยู่อาศัยใหม่
+冷房,れいぼう,"cooling, air conditioning","ความเย็น, เครื่องปรับอากาศ"
+都合,つごう,"circumstances, convenience",สถานการณ์ความสะดวกสบาย
+遠慮,えんりょする,"restraint, reserve, hesitate",ยับยั้งชั่งใจ สงวน ลังเล
+亡くなる,なくなる,to pass away,ที่จะจากไป
+科学,かがく,science,วิทยาศาสตร์
+はっきり,はっきり,"clearly, distinctly",ชัดเจน ชัดเจน
+差し上げる,さしあげる,-- humble expression for あげる --,-- สำนวนที่ถ่อมตัวสำหรับ あげる --
+気持ち,きもち,"feeling, sensation, mood",ความรู้สึก ความรู้สึก
+祖父,そふ,grandfather,คุณปู่
+港,みなと,"harbor, port",ท่าเรือ ท่าเรือ
+予約,よやく,reservation,สำรองห้องพัก
+凄い,すごい,"terrific, great",สุดยอดเลยครับ
+入学,にゅうがくする,entry to school or university,การเข้าโรงเรียนหรือมหาวิทยาลัย
+片付ける,かたづける,"to (clean) tidy up (v.t.), to put away",(ทำความสะอาด) จัดระเบียบ (v.t.) ทิ้ง
+写す,うつす,to copy (v.t.); to photograph,คัดลอก (v.t.); เพื่อถ่ายภาพ
+パソコン,パソコン,(personal) computer,(ส่วนตัว) คอมพิวเตอร์
+部長,ぶちょう,department (division) manager,ผู้จัดการแผนก (แผนก)
+火事,かじ,fire,ไฟ
+足す,たす,to add (numbers),เพื่อเพิ่ม (ตัวเลข)
+教会,きょうかい,church,โบสถ์
+彼ら,かれら,they (usually male),พวกเขา (โดยปกติจะเป็นผู้ชาย)
+一杯,いっぱい,"full, to the utmost",เต็มที่ที่สุด
+アメリカ,アメリカ,"America, U.S.A.",อเมริกา สหรัฐอเมริกา
+男性,だんせい,man; male,ผู้ชาย; ชาย
+理由,りゆう,reason,เหตุผล
+生産,せいさんする,production; to produce,การผลิต; เพื่อผลิต
+着物,きもの,kimono; Japanese traditional dress,กิโมโน; การแต่งกายแบบดั้งเดิมของญี่ปุ่น
+おもちゃ,おもちゃ,a toy,ของเล่น
+暮れる,くれる,"to get dark, to come to an end",มืดมนต้องจบลง
+釣る,つる,to fish,ตกปลา
+打つ,うつ,"to hit, to strike","ตี, ตี"
+あんな,あんな,"such, like that",เช่นนั้น
+謝る,あやまる,to apologize,เพื่อขอโทษ
+昼間,ひるま,"daytime, during the day","กลางวัน, ระหว่างวัน"
+教育,きょういく,education,การศึกษา
+女性,じょせい,woman,ผู้หญิง
+米,こめ,uncooked rice,ข้าวดิบ
+邪魔,じゃま,"hindrance, intrusion",สิ่งกีดขวางการบุกรุก
+国際,こくさい,international,ระหว่างประเทศ
+隅,すみ,corner,มุม
+伺う,うかがう,"humble form of 行く (いく), 聞く (きく) and 来る (くる)","รูปแบบเรียบง่ายของ 行く (いく), 聞く (きく) และ 来る (くる)"
+再来週,さらいしゅう,the week after next,สัปดาห์ถัดไป
+夢,ゆめ,a dream,ความฝัน
+喉,のど,throat,คอ
+最近,さいきん,"recently, nowadays, in recent years, most recent, latest","เมื่อเร็ว ๆ นี้, ทุกวันนี้, ในปีที่ผ่านมา, ล่าสุด, ล่าสุด"
+周り,まわり,surroundings,สภาพแวดล้อม
+歴史,れきし,history,ประวัติศาสตร์
+不便,ふべん,inconvenience,ความไม่สะดวก
+ひどい,ひどい,"terrible, awful, unfair, cruel",แย่มาก แย่มาก ไม่ยุติธรรม โหดร้าย
+例えば,たとえば,"for example, e.g.",ตัวอย่างเช่น เช่น
+中々,なかなか,"very, considerably, quite",มาก ค่อนข้างมาก
+随分,ずいぶん,extremely,สุดๆ
+押し入れ,おしいれ,closet,ตู้เสื้อผ้า
+電灯,でんとう,electric light,ไฟไฟฟ้า
+叱る,しかる,to scold,จะดุ
+サンダル,サンダル,sandal,รองเท้าแตะ
+びっくりする,びっくりする,to be surprised,ต้องแปลกใจ
+うまい,うまい,delicious; skillful; fortunate,อร่อย; เก่ง; โชคดี
+変える,かえる,"to change, to alter, to vary",เปลี่ยนแปลง เปลี่ยนแปลง เปลี่ยนแปลง
+講堂,こうどう,auditorium,หอประชุม
+沸かす,わかす,to boil,ต้ม
+レジ,レジ,register,ลงทะเบียน
+しばらく,しばらく,little while,สักพัก
+特に,とくに,particularly,โดยเฉพาะ
+空く,あく,"to open, to become empty (vacant)",เปิดให้ว่างเปล่า (ว่าง)
+計画,けいかくする,"plan, project, schedule",แผน โครงการ กำหนดการ
+通り,とおり,"~ Street, ~ Avenue",~ ถนน ~ อเวนิว
+下着,したぎ,underwear,ชุดชั้นใน
+経済,けいざい,"economics, finance, economy",เศรษฐศาสตร์การเงินเศรษฐกิจ
+こう,こう,"like this, this way",แบบนี้ทางนี้
+是非,ぜひ,"certainly, by all means; without fail",แน่นอน ไม่ว่าอย่างไรก็ตาม; โดยไม่ล้มเหลว
+裏,うら,"reverse side, back","ด้านหลัง, ด้านหลัง"
+為,ため,"good, advantage, in order to",ดีได้เปรียบเพื่อที่จะ
+おいでになる,おいでになる,(hon.) to be,(ที่รัก) จะเป็น
+変わる,かわる,"to change (v.i.), to be transformed, to vary",เปลี่ยนแปลง (vi.) เปลี่ยนแปลง เปลี่ยนแปลง
+以外,いがい,"other than, with the exception of, excepting",นอกเหนือจาก ยกเว้น ยกเว้น
+済む,すむ,"to finish, to end","จบ, จบ"
+ハンバーグ,ハンバーグ,hamburger steak,สเต็กแฮมเบอร์เกอร์
+引き出し,ひきだし,drawer,ลิ้นชัก
+遊び,あそび,play,เล่น
+支度,したくする,preparation,การเตรียมตัว
+見える,みえる,to be visible; -- polite verb meaning 来る (くる) --,มองเห็นได้; -- กริยาสุภาพ แปลว่า 来RU (くる) --
+十分,じゅうぶん,enough,เพียงพอ
+音,おと,"sound, note",เสียง หมายเหตุ
+きっと,きっと,"surely, definitely, undoubtedly, certainly",แน่นอน แน่นอน ไม่ต้องสงสัยเลย
+まず,まず,"first (of all), to start with",ก่อนอื่น (ทั้งหมด) เริ่มต้นด้วย
+遠く,とおく,"far away, distant",ห่างไกล ห่างไกล
+大体,だいたい,approximately; in most cases; in general; to begin with (same as もともと),ประมาณ; ในกรณีส่วนใหญ่ โดยทั่วไป; เริ่มต้นด้วย (เหมือนกับ もともと)
+折れる,おれる,"to break, to be folded, to give in; to turn (a corner)","หัก, พับ, ยอมจำนน; เลี้ยว (มุม)"
+正しい,ただしい,correct,ถูกต้อง
+輸入,ゆにゅう,import,นำเข้า
+返事,へんじ,"reply, answer",ตอบ ตอบ
+産業,さんぎょう,industry,อุตสาหกรรม
+伝える,つたえる,"to convey (a message); to tell, to report",ถ่ายทอด (ข้อความ); เพื่อบอกเพื่อรายงาน
+お金持ち,かねもち,rich person,คนรวย
+説明,せつめい,explanation,คำอธิบาย
+島,しま,island,เกาะ
+道具,どうぐ,tool,เครื่องมือ
+滑る,すべる,"to slide, to slip","เลื่อน, เลื่อน"
+それほど,それほど,to that degree; extent,ถึงระดับนั้น; ขอบเขต
+以上,いじょう,more than; this is all,มากกว่า; นี่คือทั้งหมด
+特急,とっきゅう,limited express (train faster than an express),รถด่วนจำกัด (รถไฟเร็วกว่ารถด่วน)
+プレゼント,プレゼント,"present, gift",ของขวัญ
+妻,つま,wife (humble),ภรรยา (ถ่อมตัว)
+帰り,かえり,"return, coming back",กลับมา กลับมา
+具合,ぐあい,"condition, state, health",สภาพ สถานะ สุขภาพ
+堅,かたい,"solid, hard, firm","แข็ง, แข็ง, มั่นคง"
+駐車場,ちゅうしゃじょう,parking lot,ลานจอดรถ
+スーツ,スーツ,suit,สูท
+危険,きけん,"danger, risk, hazard","อันตราย, ความเสี่ยง, อันตราย"
+髪,かみ,hair,ผม
+天気予報,てんきよほう,weather forecast,พยากรณ์อากาศ
+彼女,かのじょ,girlfriend; she,แฟน; เธอ
+間,あいだ,"space, interval",ช่องว่างช่วงเวลา
+卒業,そつぎょう,graduation,การสำเร็จการศึกษา
+それで,それで,"and (conj.), thereupon, because of that",และ (conj.) ด้วยเหตุนี้
+枝,えだ,"branch, twig",สาขากิ่งไม้
+専門,せんもん,major; speciality,วิชาเอก; พิเศษ
+そろそろ,そろそろ,"gradually, soon",ค่อยๆ เร็วๆ นี้
+送る,おくる,"to send, to dispatch",เพื่อส่งเพื่อส่ง
+あげる,あげる,to give,ที่จะให้
+騒ぐ,さわぐ,"to make noise, to clamor","ส่งเสียงดัง, ส่งเสียงโห่ร้อง"
+尋ねる,たずねる,to inquire (same as 質問する),เพื่อสอบถาม (เหมือนกับ 質問した)
+放送,ほうそうする,broadcasting,การออกอากาศ
+政治,せいじ,politics,การเมือง
+市民,しみん,citizen,พลเมือง
+ファックス,ファックス,fax,แฟกซ์
+負ける,まける,"to lose (a game) (v.i.), to be defeated",แพ้ (เกม) (vi.) พ่ายแพ้
+指輪,ゆびわ,(finger) ring,(นิ้ว) แหวน
+田舎,いなか,"rural, countryside",ชนบท ชนบท
+見つける,みつける,"to discover, to find (v.t.)","ค้นพบ, ค้นพบ (v.t.)"
+高校生,こうこうせい,high school student,นักเรียนมัธยมปลาย
+講義,こうぎ,a lecture,การบรรยาย
+そんなに,そんなに,"so much, like that",มากขนาดนั้น
+昼休み,ひるやすみ,"lunch break, noon recess",พักเที่ยง พักเที่ยง
+忘れ物,わすれもの,"lost article, something forgotten",สิ่งของที่สูญหาย บางสิ่งที่ถูกลืม
+下りる,おりる,"to get down, to go; come down",ลงไปไป; ลงมา
+腕,うで,arm (in reference to body),แขน (หมายถึงร่างกาย)
+訳,わけ,reason; explanation,เหตุผล; คำอธิบาย
+承知,しょうちする,"consent, acceptance",ความยินยอมการยอมรับ
+日記,にっき,"diary, journal",ไดอารี่วารสาร
+高校,こうこう,high school; senior high school,โรงเรียนมัธยม; โรงเรียนมัธยมปลาย
+似る,にる,"to resemble, to be similar",คล้ายกัน คล้ายกัน
+暖房,だんぼう,heating,เครื่องทำความร้อน
+留守,るす,absence; not at home,ขาด; ไม่อยู่บ้าน
+割合,わりあい,"rate, ratio, percentage",อัตรา อัตราส่วน เปอร์เซ็นต์
+寺,てら,Buddhist temple,วัดพุทธ
+慣れる,なれる,to grow accustomed to,ที่จะคุ้นเคยกับ
+普通,ふつう,common; usual,ทั่วไป; ปกติ
+手伝う,てつだう,to help,เพื่อช่วย
+なるほど,なるほど,I see; I now understand,ฉันเห็น; ตอนนี้ฉันเข้าใจแล้ว
+くださる,くださる,"(hon.) to give, to confer","(ที่รัก) ให้, หารือ"
+息子,むすこ,(humble) son,(ถ่อมตัว) ลูกชาย
+お子さん,おこさん,(someone else's) child (polite),(ของคนอื่น) ลูก (สุภาพ)
+会場,かいじょう,"venue, meeting place","สถานที่, สถานที่นัดพบ"
+笑う,わらう,"to laugh, to smile",หัวเราะยิ้ม
+運ぶ,はこぶ,"to transport, to carry",ในการขนส่งเพื่อดำเนินการ
+文学,ぶんがく,literature,วรรณกรรม
+光,ひかり,light,แสง
+お見舞い,おみまい,"calling on someone who is ill, visit",โทรหาคนป่วยเยี่ยมชม
+席,せき,a seat,ที่นั่ง
+ご存じ,ごぞんじ,"knowing, acquaintance","รู้,รู้จัก"
+下る,さがる,"to descend, to drop, to fall","ล้ม, ล้ม, ล้ม"
+アジア,アジア,Asia,เอเชีย
+褒める,ほめる,to praise; to say nice things,สรรเสริญ; ที่จะพูดสิ่งดีๆ
+最も,もっとも,most,มากที่สุด
+合う,あう,"to fit, to match",เพื่อให้พอดีเพื่อให้เข้ากัน
+最後,さいご,"last, end",สุดท้าย จบ
+値段,ねだん,price,ราคา
+退院,たいいんする,leaving hospital,ออกจากโรงพยาบาล
+展覧会,てんらんかい,exhibition,นิทรรศการ
+久しぶり,ひさしぶり,it has been a long time; for the first time in a long time,มันเป็นเวลานานแล้ว ครั้งแรกในรอบนาน
+カーテン,カーテン,curtain,ม่าน
+汽車,きしゃ,train (steam),รถไฟ (ไอน้ำ)
+遅れる,おくれる,to (be) become late,(จะ) มาสาย
+見つかる,みつかる,"to be found (v.i.), to be discovered",ที่จะพบ (vi.) ที่จะค้นพบ
+召し上がる,めしあがる,-- honorific form of 食べる (たべる) and 飲む (のむ) --,-- รูปแสดงเกียรติของ רべる (たべる) และ 飲む (のむ) --
+太る,ふとる,to gain weight,เพื่อเพิ่มน้ำหนัก
+注射,ちゅうしゃ,injection,ฉีด
+様,よう,"way, manner, kind",วิธี มารยาท ใจดี
+最初,さいしょ,"beginning, first",เริ่มแรก
+安心,あんしん,"peace of mind, relief",สบายใจ โล่งอก
+直る,なおる,to be fixed,ที่จะได้รับการแก้ไข
+集める,あつめる,"to collect, to gather (v.t.), to assemble","รวบรวม, รวบรวม (v.t.), รวบรวม"
+直す,なおす,to correct (v.t.); to fix,แก้ไข (v.t.); เพื่อแก้ไข
+続く,つづく,to be continued,มีต่อ
+先輩,せんぱい,senior members of a group,สมาชิกอาวุโสของกลุ่ม
+約束,やくそく,"arrangement, appointment, promise",การจัดเตรียม การนัดหมาย สัญญา
+世話,せわする,looking after; to look after,ดูแล; ที่จะดูแล
+近所,きんじょ,neighborhood,ย่านใกล้เคียง
+将来,しょうらい,(in the) future; prospects,(ในอนาคต; โอกาส
+億,おく,hundred million,ร้อยล้าน
+数学,すうがく,mathematics,คณิตศาสตร์
+文化,ぶんか,culture,วัฒนธรรม
+払う,はらう,to pay,ที่จะจ่าย
+習慣,しゅうかん,custom (in reference to culture),กำหนดเอง (อ้างอิงถึงวัฒนธรรม)
+焼ける,やける,"to burn, to be roasted","เผา, ย่าง"
+君,きみ,you (informal for men),คุณ (ไม่เป็นทางการสำหรับผู้ชาย)
+冷える,ひえる,"to grow cold, to cool down","เย็นขึ้น, เย็นลง"
+点く,つく,"to be started, to be switched on","ที่จะเริ่มต้น, ที่จะเปิด"
+この間,このあいだ,"the other day, recently",เมื่อวันก่อน
+格好,かっこう,"appearance, manner, shape, form, posture",รูปลักษณ์ ท่าทาง รูปร่าง ท่าทาง
+続ける,つづける,"to continue, to keep up",เพื่อดำเนินการต่อเพื่อให้ทัน
+落す,おとす,"to drop, to lose","หล่น, แพ้"
+明日,あす,tomorrow,พรุ่งนี้
+出発,しゅっぱつする,departure,ออกเดินทาง
+拝見,はいけんする,"(humble) (polite) seeing, look at",(ถ่อมตัว) (สุภาพ) เห็นดู
+割れる,われる,to break,ที่จะทำลาย
+背中,せなか,back (of body),หลัง (ของร่างกาย)
+新聞社,しんぶんしゃ,newspaper company,บริษัทหนังสือพิมพ์
+いじめる,いじめる,"to bully, to torment",กลั่นแกล้งทรมาน
+おっしゃる,おっしゃる,-- honorific expression for いう --,-- สำนวนแสดงความเคารพสำหรับ いō --
+眠い,ねむい,"sleepy, drowsy",ง่วงนอน
+濡れる,ぬれる,to get wet,เปียก
+倒れる,たおれる,"to collapse, to break down",พังทลายลง
+アクセサリー,アクセサリー,accessory,อุปกรณ์เสริม
+考える,かんがえる,to think (about); to consider,คิด (เกี่ยวกับ); เพื่อพิจารณา
+向かう,むかう,"to face, to go towards",เผชิญหน้าไปทาง
+自由,じゆう,freedom,เสรีภาพ
+仕方,しかた,way (of doing something),วิธี (ในการทำบางสิ่ง)
+首,くび,neck,คอ
+程,ほど,"degree, extent",ระดับขอบเขต
+代わり,かわり,"substitute, replacement","ทดแทน, ทดแทน"
+失敗,しっぱい,"failure, mistake",ความล้มเหลว ความผิดพลาด
+工業,こうぎょう,(manufacturing) industry,(การผลิต) อุตสาหกรรม
+移る,うつる,to move (from a house); to transfer (from a department); to shift,ย้าย (จากบ้าน); โอน (จากแผนก); เพื่อเลื่อน
+スーツケース,スーツケース,suitcase,กระเป๋าเดินทาง
+ひげ,ひげ,beard,เครา
+研究室,けんきゅうしつ,the professor's office; laboratory,ห้องทำงานของศาสตราจารย์ ห้องปฏิบัติการ
+工場,こうじょう,factory,โรงงาน
+紹介,しょうかい,an introduction,บทนำ
+けれど,けれど,"but, although",แต่ถึงแม้ว่า
+舟,ふね,"ship, boat",เรือ เรือ
+動く,うごく,to move,เพื่อย้าย
+コンサート,コンサート,concert,คอนเสิร์ต
+虫,むし,insect,แมลง
+優しい,やさしい,"kind (person), gentle (person), easy (problem)","ใจดี (คน), อ่อนโยน (คน), ง่าย (ปัญหา)"
+コンピュータ,コンピュータ,computer,คอมพิวเตอร์
+植える,うえる,to plant,ที่จะปลูก
+両方,りょうほう,"both sides, both parties",ทั้งสองฝ่ายทั้งสองฝ่าย
+汚れる,よごれる,to become dirty,กลายเป็นสกปรก
+水泳,すいえい,swimming,ว่ายน้ำ
+経験,けいけんする,experience,ประสบการณ์
+勝つ,かつ,to win,ที่จะชนะ
+砂,すな,sand,ทราย
+警察,けいさつ,police; police station,ตำรวจ; สถานีตำรวจ
+取り替える,とりかえる,"to exchange, to replace",เพื่อแลกเปลี่ยนเพื่อแทนที่
+急ぐ,いそぐ,"to hurry, to be in a hurry, to rush",รีบเร่งรีบ
+簡単,かんたん,simple,เรียบง่าย
+参る,まいる,humble expression for 行く and 来る,สำนวนที่ถ่อมตัวสำหรับ 行く และ 来RU
+全然,ぜんぜん,"not at all; wholly, entirely",ไม่เลย; ทั้งหมดทั้งหมด
+特別,とくべつ,special,พิเศษ
+復習,ふくしゅう,"review (of lessons), revision",การทบทวน (บทเรียน) การแก้ไข
+間に合う,まにあう,to be in time for,ให้ทัน
+役に立つ,やくにたつ,"to be helpful, to be useful",มีประโยชน์ มีประโยชน์
+もうすぐ,もうすぐ,very soon; in a few moments; days,เร็ว ๆ นี้; ในอีกสักครู่ วัน
+真中,まんなか,"middle, center","กลาง, กลาง"
+戻る,もどる,to return (v.i.); to come back,กลับ (vi.); ที่จะกลับมา
+研究,けんきゅう,"study, research, investigation",ศึกษา วิจัย สืบสวน
+ケーキ,ケーキ,cake,เค้ก
+草,くさ,grass,หญ้า
+込む,こむ,to be crowded,ที่จะแออัด
+この頃,このごろ,"these days, nowadays",ทุกวันนี้ ทุกวันนี้
+訪ねる,たずねる,to visit,เพื่อเยี่ยมชม
+下げる,さげる,to lower (v.t.); to hang,ลดลง (v.t.); ที่จะแขวน
+花見,はなみ,cherry-blossom viewing,ชมดอกซากุระ
+途中,とちゅう,"on the way, midway",ระหว่างทาง กลางทาง
+入院,にゅういんする,hospitalization,การเข้ารับการรักษาในโรงพยาบาล
+乗り換える,のりかえる,"to transfer (trains), to change (bus, train, etc.)",การเปลี่ยนรถ (รถไฟ) การเปลี่ยนรถ (รถบัส รถไฟ ฯลฯ)
+別れる,わかれる,"to part from, to separate",แยกจากกัน
+安全,あんぜん,"safety, security",ความปลอดภัย การรักษาความปลอดภัย
+看護婦,かんごふ,(female) nurse,(หญิง) พยาบาล
+見物,けんぶつ,sightseeing,เที่ยวชมสถานที่
+相談,そうだんする,consultation,การให้คำปรึกษา
+ガソリンスタンド,ガソリンスタンド,"gas station, service station","ปั๊มน้ำมัน, สถานีบริการ"
+テニス,テニス,tennis,เทนนิส
+眠る,ねむる,to sleep,นอน
+上がる,あがる,"to rise, to go up",ลุกขึ้น ขึ้นไป
+翻訳,ほんやく,translation,การแปล
+食事,しょくじする,meal,มื้ออาหาร
+お陰,おかげ,thanks or owing to,ขอบคุณหรือเนื่องจาก
+娘,むすめ,daughter (humble),ลูกสาว (ถ่อมตัว)
+競争,きょうそう,"competition, contest",การแข่งขันการประกวด
+会議,かいぎ,business meeting; conference,การประชุมทางธุรกิจ การประชุม
+湖,みずうみ,lake,ทะเลสาบ
+集まる,あつまる,"to gather (v.i.), to collect",รวบรวม (vi.) เพื่อรวบรวม
+生活,せいかつする,"living, life; to live",การใช้ชีวิต ชีวิต; ที่จะมีชีวิตอยู่
+糸,いと,thread,ด้าย
+関係,かんけい,"relation(ship), connection",ความสัมพันธ์ (เรือ) การเชื่อมต่อ
+ピアノ,ピアノ,piano,เปียโน
+番組,ばんぐみ,broadcast program,รายการออกอากาศ
+急,きゅう,"urgent, sudden; steep","เร่งด่วน, ฉับพลัน; สูงชัน"
+棚,たな,"shelves, rack","ชั้นวางของ, ตะแกรง"
+木綿,もめん,cotton,ฝ้าย
+輸出,ゆしゅつする,export,ส่งออก
+タイプ,タイプ,"type, style",ประเภท สไตล์
+すり,すり,pickpocket,นักล้วงกระเป๋า
+嬉しい,うれしい,to be happy; to be glad,มีความสุข ดีใจ
+アルコール,アルコール,alcohol,แอลกอฮอล์
+ソフト,ソフト,soft; soft hat; software,อ่อนนุ่ม; หมวกนุ่ม ซอฟต์แวร์
+神社,じんじゃ,Shinto shrine,ศาลเจ้าชินโต
+大分,だいぶ,"fairly well, to a large extent, considerably, pretty much","ค่อนข้างดี, ค่อนข้างมาก, ค่อนข้างมาก"
+楽しみ,たのしみ,"pleasure, joy",ความยินดี ความยินดี
+趣味,しゅみ,hobby; pastime,งานอดิเรก; งานอดิเรก
+電報,でんぽう,telegram,โทรเลข
+家内,かない,(one's own) wife,(ของตัวเอง) ภรรยา
+指,ゆび,finger,นิ้ว
+これから,これから,"from now on, after this",จากนี้ไป หลังจากนี้
+たまに,たまに,occasionally,บางครั้ง
+社会,しゃかい,society,สังคม
