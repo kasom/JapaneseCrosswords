@@ -992,8 +992,26 @@ class Game {
   handleKeyInput(kana) {
     if (!this.state.selectedCell) return;
     const { row, col } = this.state.selectedCell;
-    const cell = this.state.grid[row]?.[col];
-    if (!cell) return;
+    let cell = this.state.grid[row]?.[col];
+
+    const isBeyondWordEnd = this.isSelectionBeyondWordEnd();
+
+    if (!cell) {
+      if (isBeyondWordEnd && ['や', 'ゆ', 'よ', 'ゃ', 'ゅ', 'ょ'].includes(kana)) {
+        const prevCell = this.getPreviousCell();
+        if (prevCell && prevCell.userInput && prevCell.userInput.length === 1) {
+          const base = prevCell.userInput;
+          const smallKana = this.normalToSmall[kana] || kana;
+          if (this.canCombine(base, smallKana)) {
+            prevCell.userInput = base + kana;
+            this.checkWordCompletion();
+            this.render();
+            return;
+          }
+        }
+      }
+      return;
+    }
 
     if (kana === 'ー') {
       cell.userInput = (cell.userInput || '') + 'ー';
@@ -1026,6 +1044,20 @@ class Game {
     this.checkWordCompletion();
     this.moveToNextCell();
     this.render();
+  }
+
+  isSelectionBeyondWordEnd() {
+    if (!this.state.selectedCell || !this.state.selectedWord) return false;
+    const { row, col } = this.state.selectedCell;
+    const word = this.state.selectedWord;
+    const syllables = splitIntoSyllables(word.reading || '');
+    const wordLen = syllables.length;
+
+    if (word.direction === 'across') {
+      return row === word.row && col === word.col + wordLen;
+    } else {
+      return col === word.col && row === word.row + wordLen;
+    }
   }
 
   canCombine(base, small) {
@@ -1101,25 +1133,34 @@ class Game {
     let converted = null;
 
     if (kana.length === 2) {
-      // Handle 2-character Yōon (e.g. しゃ -> じゃ)
+      // Handle 2-character Yōon (e.g. しゃ -> じゃ or きよ -> きょ)
       const base = kana[0];
       const small = kana[1];
-      let convertedBase = null;
 
-      if (this.baseToDakuten[base] || this.baseToHandakuten[base]) {
-        convertedBase = this.baseToDakuten[base] || this.baseToHandakuten[base];
-      } else if (this.dakutenToBase[base]) {
-        if (this.baseToHandakuten[this.dakutenToBase[base]]) {
-          convertedBase = this.baseToHandakuten[this.dakutenToBase[base]];
-        } else {
-          convertedBase = this.dakutenToBase[base];
+      if (this.normalToSmall[small]) {
+        // If second char is normal (e.g. よ), convert it to small (ょ)
+        converted = base + this.normalToSmall[small];
+      } else {
+        // If second char is already small (e.g. ょ), try converting the base first (e.g. き -> ぎ)
+        let convertedBase = null;
+        if (this.baseToDakuten[base] || this.baseToHandakuten[base]) {
+          convertedBase = this.baseToDakuten[base] || this.baseToHandakuten[base];
+        } else if (this.dakutenToBase[base]) {
+          if (this.baseToHandakuten[this.dakutenToBase[base]]) {
+            convertedBase = this.baseToHandakuten[this.dakutenToBase[base]];
+          } else {
+            convertedBase = this.dakutenToBase[base];
+          }
+        } else if (this.handakutenToBase[base]) {
+          convertedBase = this.handakutenToBase[base];
         }
-      } else if (this.handakutenToBase[base]) {
-        convertedBase = this.handakutenToBase[base];
-      }
 
-      if (convertedBase) {
-        converted = convertedBase + small;
+        if (convertedBase) {
+          converted = convertedBase + small;
+        } else if (this.smallToNormal[small]) {
+          // Fallback: toggle small back to normal
+          converted = base + this.smallToNormal[small];
+        }
       }
     } else {
       // Standard 1-character logic
