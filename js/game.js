@@ -24,6 +24,14 @@ class Game {
   }
 
   init() {
+    const diffSelector = document.getElementById('difficulty-selector');
+    if (window.innerWidth < 768) {
+      this.state.currentDifficulty = 'easy';
+      if (diffSelector) {
+        diffSelector.value = 'easy';
+      }
+    }
+
     const wlSelector = document.getElementById('wordlist-selector');
     const url = wlSelector ? wlSelector.value : 'data/puzzles.csv';
     this.loadPuzzles(url);
