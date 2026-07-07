@@ -983,7 +983,7 @@ class Game {
       m: { center: 'ま', up: 'む', left: 'み', right: 'め', down: 'も' },
       y: { center: 'や', up: 'ゆ', left: 'ゃ', right: 'ょ', down: 'よ' },
       r: { center: 'ら', up: 'る', left: 'り', right: 'れ', down: 'ろ' },
-      w: { center: 'わ', up: 'う', left: 'ゐ', right: 'ゑ', down: 'を' },
+      w: { center: 'わ', up: 'ん', left: 'を', right: 'ー', down: '〜' },
       tsu: { center: 'っ' },
     };
     const map = flickMap[key];
