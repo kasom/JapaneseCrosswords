@@ -1071,7 +1071,7 @@ class Game {
     this.toggleDirection();
   }
 
-  handleDakuten(direction) {
+   handleDakuten(direction) {
     if (!this.state.selectedCell || !this.state.selectedWord) return;
     const prevCell = this.getPreviousCell();
     if (!prevCell || !prevCell.userInput) return;
@@ -1079,28 +1079,19 @@ class Game {
     const kana = prevCell.userInput;
     const toBaseDakuten = this.dakutenToBase[kana];
     const toBaseHanda = this.handakutenToBase[kana];
-    const isDownRight = direction === 'down' || direction === 'right';
 
     let converted = null;
 
     if (this.baseToDakuten[kana] || this.baseToHandakuten[kana]) {
-      if (isDownRight) {
-        converted = this.baseToHandakuten[kana] || this.baseToDakuten[kana];
-      } else {
-        converted = this.baseToDakuten[kana] || this.baseToHandakuten[kana];
-      }
+      converted = this.baseToDakuten[kana];
     } else if (toBaseDakuten) {
-      if (isDownRight) {
-        converted = toBaseDakuten;
+      if (this.baseToHandakuten[toBaseDakuten]) {
+        converted = this.baseToHandakuten[toBaseDakuten];
       } else {
-        converted = this.baseToHandakuten[toBaseDakuten] || kana;
+        converted = toBaseDakuten;
       }
     } else if (toBaseHanda) {
-      if (isDownRight) {
-        converted = toBaseHanda;
-      } else {
-        converted = kana;
-      }
+      converted = toBaseHanda;
     } else if (this.smallToNormal[kana]) {
       converted = this.smallToNormal[kana];
     } else if (this.normalToSmall[kana]) {
