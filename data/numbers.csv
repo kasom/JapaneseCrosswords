@@ -1,0 +1,105 @@
+word,reading,meaning,thai_meaning
+一,いち,one,หนึ่ง
+二,に,two,สอง
+三,さん,three,สาม
+四,よん,four,สี่
+五,ご,five,ห้า
+六,ろく,six,หก
+七,なな,seven,เจ็ด
+八,はち,eight,แปด
+九,きゅう,nine,เก้า
+十,じゅう,ten,สิบ
+十一,じゅういち,eleven,สิบเอ็ด
+十二,じゅうに,twelve,สิบสอง
+十三,じゅうさん,thirteen,สิบสาม
+十四,じゅうよん,fourteen,สิบสี่
+十五,じゅうご,fifteen,สิบห้า
+十六,じゅうろく,sixteen,สิบหก
+十七,じゅうなな,seventeen,สิบเจ็ด
+十八,じゅうはち,eighteen,สิบแปด
+十九,じゅうきゅう,nineteen,สิบเก้า
+二十,にじゅう,twenty,ยี่สิบ
+零,れい,zero,ศูนย์
+ゼロ,ぜろ,zero,ศูนย์
+一つ,ひとつ,one (thing),หนึ่งชิ้น/อย่าง
+二つ,ふたつ,two (things),สองชิ้น/อย่าง
+三つ,みっつ,three (things),สามชิ้น/อย่าง
+四つ,よっつ,four (things),สี่ชิ้น/อย่าง
+五つ,いつつ,five (things),ห้าชิ้น/อย่าง
+六つ,むっつ,six (things),หกชิ้น/อย่าง
+七つ,ななつ,seven (things),เจ็ดชิ้น/อย่าง
+八つ,やっつ,eight (things),แปดชิ้น/อย่าง
+九つ,ここのつ,nine (things),เก้าชิ้น/อย่าง
+十,とお,ten (things),สิบชิ้น/อย่าง
+三百,さんびゃく,three hundred,สามร้อย
+六百,ろっぴゃく,six hundred,หกร้อย
+八百,はっぴゃく,eight hundred,แปดร้อย
+三千,さんぜん,three thousand,สามพัน
+八千,はっせん,eight thousand,แปดพัน
+一千万,いっせんまん,ten million,สิบล้าน
+一億,いちおく,one hundred million,หนึ่งร้อยล้าน
+一兆,いっちょう,one trillion,หนึ่งล้านล้าน
+一分,いっぷん,one minute,หนึ่งนาที
+三分,さんぷん,three minutes,สามนาที
+四分,よんぷん,four minutes,สี่นาที
+六分,ろっぷん,six minutes,หกนาที
+八分,はっぷん,eight minutes,แปดนาที
+十分,じゅっぷん,ten minutes,สิบนาที
+一日,ついたち,1st day of the month,วันที่หนึ่ง
+二日,ふつか,2nd day of the month,วันที่สอง
+三日,みっか,3rd day of the month,วันที่สาม
+四日,よっか,4th day of the month,วันที่สี่
+五日,いつか,5th day of the month,วันที่ห้า
+六日,むいか,6th day of the month,วันที่หก
+七日,なのか,7th day of the month,วันที่เจ็ด
+八日,ようか,8th day of the month,วันที่แปด
+九日,ここのか,9th day of the month,วันที่เก้า
+十日,とおか,10th day of the month,วันที่สิบ
+十四日,じゅうよっか,14th day of the month,วันที่สิบสี่
+二十日,はつか,20th day of the month,วันที่ยี่สิบ
+二十四日,にじゅうよっか,24th day of the month,วันที่ยี่สิบสี่
+二十歳,はたち,20 years old,อายุยี่สิบปี
+一人,ひとり,one person,หนึ่งคน
+二人,ふたり,two people,สองคน
+四人,よにん,four people,สี่คน
+一本,いっぽん,one bottle/cylindrical object,หนึ่งแท่ง/ขวด
+三本,さんぼん,three bottles/cylindrical objects,สามแท่ง/ขวด
+六本,ろっぽん,six bottles/cylindrical objects,หกแท่ง/ขวด
+八本,はっぽん,eight bottles/cylindrical objects,แปดแท่ง/ขวด
+十本,じゅっぽん,ten bottles/cylindrical objects,สิบแท่ง/ขวด
+一匹,いっぴき,one small animal,สัตว์เล็กหนึ่งตัว
+三匹,さんびき,three small animals,สัตว์เล็กสามตัว
+六匹,ろっぴき,six small animals,สัตว์เล็กหกตัว
+八匹,はっぴき,eight small animals,สัตว์เล็กแปดตัว
+十匹,じゅっぴき,ten small animals,สัตว์เล็กสิบตัว
+一足,いっそく,one pair of footwear,หนึ่งคู่ (รองเท้า/ถุงเท้า)
+三足,さんぞく,three pairs of footwear,สามคู่ (รองเท้า/ถุงเท้า)
+八足,はっそく,eight pairs of footwear,แปดคู่ (รองเท้า/ถุงเท้า)
+十足,じゅっそく,ten pairs of footwear,สิบคู่ (รองเท้า/ถุงเท้า)
+一軒,いっけん,one house/building,บ้านหนึ่งหลัง
+三軒,さんげん,three houses/buildings,บ้านสามหลัง
+六軒,ろっけん,six houses/buildings,บ้านหกหลัง
+八軒,はっけん,eight houses/buildings,บ้านแปดหลัง
+十軒,じゅっけん,ten houses/buildings,บ้านสิบหลัง
+一杯,いっぱい,one cup/glassful,หนึ่งถ้วย/แก้ว
+三杯,さんばい,three cups/glassfuls,สามถ้วย/แก้ว
+六杯,ろっぱい,six cups/glassfuls,หกถ้วย/แก้ว
+八杯,はっぱい,eight cups/glassfuls,แปดถ้วย/แก้ว
+十杯,じゅっぱい,ten cups/glassfuls,สิบถ้วย/แก้ว
+一階,いっかい,first floor,ชั้นหนึ่ง
+三階,さんがい,third floor,ชั้นสาม
+六階,ろっかい,sixth floor,ชั้นหก
+八階,はっかい,eighth floor,ชั้นแปด
+十階,じゅっかい,tenth floor,ชั้นสิบ
+一歳,いっさい,one year old,อายุหนึ่งขวบ/ปี
+八歳,はっさい,eight years old,อายุแปดขวบ/ปี
+十歳,じゅっさい,ten years old,อายุสิบขวบ/ปี
+一回,いっかい,one time/occurrence,หนึ่งครั้ง
+六回,ろっかい,six times/occurrences,หกครั้ง
+八回,はっかい,eight times/occurrences,แปดครั้ง
+十回,じゅっかい,ten times/occurrences,สิบครั้ง
+一冊,いっさつ,one book/volume,หนังสือหนึ่งเล่ม
+八冊,はっさつ,eight books/volumes,หนังสือแปดเล่ม
+十冊,じゅっさつ,ten books/volumes,หนังสือสิบเล่ม
+三羽,さんば,three birds/rabbits,สัตว์ปีกสามตัว
+十羽,じゅっぱ,ten birds/rabbits,สัตว์ปีกสิบตัว
