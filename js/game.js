@@ -1188,7 +1188,13 @@ class Game {
       }
     } else {
       // Standard 1-character logic
-      if (this.baseToDakuten[kana] || this.baseToHandakuten[kana]) {
+      if (kana === 'つ') {
+        converted = 'っ';
+      } else if (kana === 'っ') {
+        converted = 'づ';
+      } else if (kana === 'づ') {
+        converted = 'つ';
+      } else if (this.baseToDakuten[kana] || this.baseToHandakuten[kana]) {
         converted = this.baseToDakuten[kana];
       } else if (toBaseDakuten) {
         if (this.baseToHandakuten[toBaseDakuten]) {
