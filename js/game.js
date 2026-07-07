@@ -895,7 +895,7 @@ class Game {
         const dist = Math.sqrt(dx * dx + dy * dy);
 
         let direction = 'center';
-        if (dist > 20 && elapsed < 350) {
+        if (dist > 20 && elapsed < 1000) {
           if (Math.abs(dx) > Math.abs(dy)) {
             direction = dx > 0 ? 'right' : 'left';
           } else {
@@ -948,19 +948,24 @@ class Game {
         key.classList.remove('osk-key-pressed');
       });
 
+      let endX = 0, endY = 0;
+
       key.addEventListener('mousedown', (e) => {
+        e.preventDefault();
+        endX = e.clientX;
+        endY = e.clientY;
         onStart(e.clientX, e.clientY);
       });
 
-      key.addEventListener('mouseup', (e) => {
-        onEnd(e.clientX, e.clientY);
+      document.addEventListener('mousemove', (e) => {
+        if (!isTracking) return;
+        endX = e.clientX;
+        endY = e.clientY;
       });
 
-      key.addEventListener('mouseleave', () => {
-        if (isTracking) {
-          isTracking = false;
-          key.classList.remove('osk-key-pressed');
-        }
+      document.addEventListener('mouseup', (e) => {
+        if (!isTracking) return;
+        onEnd(endX, endY);
       });
     });
   }
