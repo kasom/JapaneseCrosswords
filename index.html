@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japanese Crossword Game</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="logo-area">
+        <span class="logo-emoji">🧩</span>
+        <h1>Japanese Crossword</h1>
+      </div>
+      <div class="header-controls">
+        <div class="control-group">
+          <label for="difficulty-selector">Board Size:</label>
+          <select id="difficulty-selector" class="puzzle-selector">
+            <option value="easy">Small (10x10)</option>
+            <option value="medium" selected>Medium (13x13)</option>
+            <option value="hard">Large (15x15)</option>
+          </select>
+        </div>
+        
+        <button class="btn btn-primary" onclick="game.generateRandomPuzzle(document.getElementById('difficulty-selector').value)">
+          <span>🎲</span> New Game
+        </button>
+
+        <div class="hints-container">
+          <button class="btn btn-hint" onclick="game.useHint()">
+            Hint <span class="badge" id="hints-remaining">3</span>
+          </button>
+          <button class="btn btn-reveal" onclick="game.revealWord()">Reveal</button>
+        </div>
+        
+        <button class="btn btn-check" onclick="game.checkAnswers()">Check</button>
+        <button class="btn btn-toggle" onclick="game.toggleHints()">Romaji Hint</button>
+        <div class="timer" id="timer">00:00</div>
+      </div>
+    </header>
+    
+    <div class="progress-container">
+      <div class="progress-info">
+        <span class="progress-label">Completion Status</span>
+        <span class="progress-text" id="progress">0/0</span>
+      </div>
+      <div class="progress-bar-wrapper">
+        <div class="progress-dots" id="progress-dots"></div>
+      </div>
+    </div>
+
+    <div class="instructions">
+      <strong>How to play:</strong> Type romaji on your keyboard (e.g., <code>ka</code> → か, <code>shi</code> → し, <code>-</code> → ー). 
+      Use Arrow keys to navigate, Tab for the next word, Space to toggle direction, and Backspace to delete.
+    </div>
+
+    <div class="container">
+      <div class="grid-container">
+        <div id="grid" class="grid"></div>
+      </div>
+      <div class="clues-container" id="clues-container">
+        <div class="clues-section">
+          <h3>ACROSS</h3>
+          <div id="clues-across" class="clues-list"></div>
+        </div>
+        <div class="clues-section">
+          <h3>DOWN</h3>
+          <div id="clues-down" class="clues-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Victory Modal -->
+  <div id="victory-modal" class="modal-overlay hidden">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="victory-icon">🎉</div>
+        <h2>Congratulations!</h2>
+        <p>You completed the Japanese crossword successfully.</p>
+      </div>
+      <div class="modal-body">
+        <div class="stats-row">
+          <div class="stat-card">
+            <span class="stat-label">Time Taken</span>
+            <span id="victory-time" class="stat-value">00:00</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Hints Used</span>
+            <span id="victory-hints" class="stat-value">0/3</span>
+          </div>
+        </div>
+        <div class="victory-words-title">Vocabulary Recap</div>
+        <div id="victory-words-list" class="victory-words-list"></div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary btn-large" onclick="game.closeVictoryModalAndPlayAgain()">🎲 Play Another</button>
+        <button class="btn btn-secondary btn-large" onclick="game.closeVictoryModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/csvParser.js"></script>
+  <script src="js/romaji.js"></script>
+  <script src="js/puzzleGenerator.js"></script>
+  <script src="js/game.js"></script>
+  <script>
+    const game = new Game();
+    game.init();
+  </script>
+</body>
+</html>
