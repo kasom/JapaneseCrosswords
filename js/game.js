@@ -693,6 +693,7 @@ class Game {
   render() {
     this.renderGrid();
     this.renderClues();
+    this.renderActiveCluesBanner();
     this.updateTimer();
     this.updateProgress();
     this.updateHints();
@@ -802,6 +803,66 @@ class Game {
     return '<div class="' + classes + '" data-number="' + word.number + '">' +
       '<span class="clue-number">' + word.number + '</span>' +
       '<span class="clue-meaning">' + (word.meaning || '') + (word.thai_meaning ? ' / ' + word.thai_meaning : '') + '</span></div>';
+  }
+
+  renderActiveCluesBanner() {
+    const bannerEl = document.getElementById('active-clues-banner');
+    if (!bannerEl) return;
+
+    if (!this.state.selectedCell) {
+      bannerEl.innerHTML = '<div class="active-clue-placeholder">Select a crossword cell to see clues here</div>';
+      return;
+    }
+
+    const { row, col } = this.state.selectedCell;
+    const words = this.getWordsForCell(row, col);
+
+    if (words.length === 0) {
+      bannerEl.innerHTML = '<div class="active-clue-placeholder">Select a crossword cell to see clues here</div>';
+      return;
+    }
+
+    let html = '';
+    words.forEach(w => {
+      const isCompleted = this.state.completedWords.has(`${w.number}_${w.direction}`);
+      const isSelected = this.state.selectedWord?.number === w.number && this.state.selectedWord?.direction === w.direction;
+      const isAcross = w.direction === 'across';
+
+      let classes = 'active-clue-item';
+      if (isCompleted) classes += ' completed';
+      if (isSelected) classes += ' selected';
+
+      html += '<div class="' + classes + '" onclick="game.toggleActiveClueDirection(\'' + w.direction + '\')">' +
+        '<span class="direction-badge ' + w.direction + '">' + (isAcross ? 'Across' : 'Down') + '</span>' +
+        '<span class="active-clue-number">' + w.number + '</span>' +
+        '<span class="active-clue-text">' + (w.meaning || '') + (w.thai_meaning ? ' / ' + w.thai_meaning : '') + '</span>' +
+        '</div>';
+    });
+
+    bannerEl.innerHTML = html;
+  }
+
+  getWordsForCell(row, col) {
+    return this.state.placedWords.filter(w => {
+      const syllables = splitIntoSyllables(w.reading || '');
+      if (w.direction === 'across') {
+        return w.row === row && col >= w.col && col < w.col + syllables.length;
+      } else {
+        return w.col === col && row >= w.row && row < w.row + syllables.length;
+      }
+    });
+  }
+
+  toggleActiveClueDirection(direction) {
+    if (this.state.selectedCell) {
+      const { row, col } = this.state.selectedCell;
+      const word = this.findWordForCell(row, col, direction);
+      if (word) {
+        this.state.direction = direction;
+        this.state.selectedWord = word;
+        this.render();
+      }
+    }
   }
 
   updateTimer() {
