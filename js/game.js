@@ -26,6 +26,7 @@ class Game {
     const url = wlSelector ? wlSelector.value : 'data/puzzles.csv';
     this.loadPuzzles(url);
     this.setupEventListeners();
+    this.setupMobileInput();
   }
 
   loadPuzzles(url = 'data/puzzles.csv') {
@@ -315,6 +316,7 @@ class Game {
       this.state.selectedWord = word;
     }
 
+    this.focusMobileInput();
     this.render();
   }
 
@@ -340,6 +342,7 @@ class Game {
     this.state.selectedWord = word;
     this.state.selectedCell = { row: word.row, col: word.col };
     this.state.romajiBuffer = '';
+    this.focusMobileInput();
     this.render();
   }
 
@@ -373,6 +376,7 @@ class Game {
       }
     }
     
+    this.focusMobileInput();
     this.render();
   }
 
@@ -860,8 +864,49 @@ class Game {
       if (word) {
         this.state.direction = direction;
         this.state.selectedWord = word;
+        this.focusMobileInput();
         this.render();
       }
+    }
+  }
+
+  setupMobileInput() {
+    const input = document.getElementById('mobile-input');
+    if (!input) return;
+
+    // Listen to keydown to capture special keys like Backspace, Arrow keys, etc.
+    input.addEventListener('keydown', (e) => {
+      const key = e.key;
+      if (key === 'Backspace') {
+        e.preventDefault();
+        if (this.state.romajiBuffer.length > 0) {
+          this.state.romajiBuffer = this.state.romajiBuffer.slice(0, -1);
+          this.render();
+        } else {
+          this.deleteChar();
+        }
+      }
+    });
+
+    // Listen to input event for standard text typing (highly compatible with mobile/IME)
+    input.addEventListener('input', (e) => {
+      const value = e.target.value;
+      if (value) {
+        for (let i = 0; i < value.length; i++) {
+          const char = value[i].toLowerCase();
+          if (/^[a-z-]$/.test(char)) {
+            this.inputRomaji(char);
+          }
+        }
+        input.value = '';
+      }
+    });
+  }
+
+  focusMobileInput() {
+    const input = document.getElementById('mobile-input');
+    if (input) {
+      input.focus();
     }
   }
 
