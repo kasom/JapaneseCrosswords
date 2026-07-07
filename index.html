@@ -47,9 +47,6 @@
         </div>
         
         <button class="btn btn-toggle" onclick="game.toggleHints()">Romaji Hint</button>
-        <button class="btn btn-toggle" id="keyboard-toggle" onclick="game.toggleKeyboard()">
-          <span>&#x2328;</span> Keyboard
-        </button>
         <div class="timer" id="timer">00:00</div>
       </div>
     </header>
@@ -197,8 +194,15 @@
         <span class="osk-flick osk-flick-right">ー</span>
         <span class="osk-flick osk-flick-down">〜</span>
       </div>
+    <div class="osk-key osk-key-action" data-action="hide" style="grid-row:4;grid-column:4">
+      <span class="osk-flick osk-flick-center">⌨️↓</span>
+    </div>
 
 </div>
+
+  <button class="keyboard-fab" id="keyboard-fab" onclick="game.toggleKeyboard()">
+    <span>⌨️</span>
+  </button>
 
   <script src="js/csvParser.js"></script>
   <script src="js/romaji.js"></script>

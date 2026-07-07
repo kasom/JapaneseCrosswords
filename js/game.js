@@ -921,6 +921,10 @@ class Game {
           this.handleDakuten(direction);
           return;
         }
+        if (action === 'hide') {
+          this.toggleKeyboard();
+          return;
+        }
 
         const keyLabel = key.dataset.key;
         const kana = this.getFlickKana(keyLabel, direction);
@@ -1243,15 +1247,15 @@ class Game {
   toggleKeyboard() {
     this.state.keyboardVisible = !this.state.keyboardVisible;
     const container = document.getElementById('on-screen-keyboard');
-    const toggle = document.getElementById('keyboard-toggle');
+    const fab = document.getElementById('keyboard-fab');
 
     if (this.state.keyboardVisible) {
       container.classList.remove('hidden');
-      toggle.classList.add('active');
+      if (fab) fab.classList.add('hidden');
       document.body.classList.add('osk-visible');
     } else {
       container.classList.add('hidden');
-      toggle.classList.remove('active');
+      if (fab) fab.classList.remove('hidden');
       document.body.classList.remove('osk-visible');
     }
   }

@@ -983,3 +983,47 @@ body {
   }
 }
 
+.keyboard-fab {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary) 0%, #4f46e5 100%);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.5), 0 8px 10px -6px rgba(99, 102, 241, 0.5);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 150;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.keyboard-fab span {
+  font-size: 24px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.keyboard-fab:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 20px 30px -10px rgba(99, 102, 241, 0.6);
+}
+
+.keyboard-fab:hover span {
+  transform: scale(1.1);
+}
+
+.keyboard-fab:active {
+  transform: translateY(-1px) scale(0.95);
+}
+
+.keyboard-fab.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.8) translateY(40px);
+}
+
