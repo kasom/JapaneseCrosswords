@@ -844,3 +844,142 @@ body {
   color: var(--text-secondary);
 }
 
+/* On-Screen Keyboard */
+.osk-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  background: rgba(11, 15, 25, 0.97);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid var(--border-color);
+  padding: 8px 6px 12px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 56px);
+  gap: 6px;
+  max-width: 480px;
+  margin: 0 auto;
+  transform: translateY(0);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.osk-container.hidden {
+  transform: translateY(100%);
+  pointer-events: none;
+}
+
+.osk-key {
+  position: relative;
+  background: #1e2a3a;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+  transition: background 0.1s, transform 0.1s;
+}
+
+.osk-key.osk-key-action {
+  background: #1a2435;
+}
+
+.osk-key:active,
+.osk-key.osk-key-pressed {
+  background: #2a3a52;
+  transform: scale(0.96);
+}
+
+.osk-key.osk-key-flicked {
+  background: #344560;
+}
+
+.osk-flick {
+  position: absolute;
+  font-size: 10px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.35);
+  pointer-events: none;
+}
+
+.osk-flick-center {
+  position: relative;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.osk-flick-up {
+  top: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.osk-flick-down {
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.osk-flick-left {
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.osk-flick-right {
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.osk-key-action .osk-flick-center {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.osk-key[data-action="dakuten"] .osk-flick-center {
+  font-size: 18px;
+}
+
+#keyboard-toggle.active {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+@media (max-width: 600px) {
+  .osk-container {
+    grid-template-rows: repeat(4, 48px);
+    padding: 6px 4px 10px;
+    gap: 4px;
+    max-width: 100%;
+  }
+
+  .osk-flick {
+    font-size: 9px;
+  }
+
+  .osk-flick-center {
+    font-size: 18px;
+  }
+
+  .osk-key-action .osk-flick-center {
+    font-size: 17px;
+  }
+
+  body.osk-visible .app {
+    padding-bottom: 210px;
+  }
+}
+
+@media (min-width: 601px) {
+  body.osk-visible .app {
+    padding-bottom: 230px;
+  }
+}
+

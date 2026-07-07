@@ -17,7 +17,8 @@ class Game {
       showClues: true,       // UI toggles
       showHints: false,
       romajiBuffer: '',      // Typing buffer
-      currentDifficulty: 'medium' // 'easy', 'medium', 'hard'
+      currentDifficulty: 'medium', // 'easy', 'medium', 'hard'
+      keyboardVisible: false
     };
   }
 
@@ -26,7 +27,7 @@ class Game {
     const url = wlSelector ? wlSelector.value : 'data/puzzles.csv';
     this.loadPuzzles(url);
     this.setupEventListeners();
-    this.setupMobileInput();
+    this.setupKeyboard();
   }
 
   loadPuzzles(url = 'data/puzzles.csv') {
@@ -316,7 +317,6 @@ class Game {
       this.state.selectedWord = word;
     }
 
-    this.focusMobileInput();
     this.render();
   }
 
@@ -342,7 +342,6 @@ class Game {
     this.state.selectedWord = word;
     this.state.selectedCell = { row: word.row, col: word.col };
     this.state.romajiBuffer = '';
-    this.focusMobileInput();
     this.render();
   }
 
@@ -376,7 +375,6 @@ class Game {
       }
     }
     
-    this.focusMobileInput();
     this.render();
   }
 
@@ -864,49 +862,282 @@ class Game {
       if (word) {
         this.state.direction = direction;
         this.state.selectedWord = word;
-        this.focusMobileInput();
         this.render();
       }
     }
   }
 
-  setupMobileInput() {
-    const input = document.getElementById('mobile-input');
-    if (!input) return;
+  setupKeyboard() {
+    const container = document.getElementById('on-screen-keyboard');
+    if (!container) return;
 
-    // Listen to keydown to capture special keys like Backspace, Arrow keys, etc.
-    input.addEventListener('keydown', (e) => {
-      const key = e.key;
-      if (key === 'Backspace') {
-        e.preventDefault();
-        if (this.state.romajiBuffer.length > 0) {
-          this.state.romajiBuffer = this.state.romajiBuffer.slice(0, -1);
-          this.render();
-        } else {
-          this.deleteChar();
-        }
-      }
-    });
+    const keys = container.querySelectorAll('.osk-key');
+    keys.forEach(key => {
+      let startX = 0, startY = 0, startTime = 0;
+      let isTracking = false;
 
-    // Listen to input event for standard text typing (highly compatible with mobile/IME)
-    input.addEventListener('input', (e) => {
-      const value = e.target.value;
-      if (value) {
-        for (let i = 0; i < value.length; i++) {
-          const char = value[i].toLowerCase();
-          if (/^[a-z-]$/.test(char)) {
-            this.inputRomaji(char);
+      const onStart = (x, y) => {
+        startX = x;
+        startY = y;
+        startTime = Date.now();
+        isTracking = true;
+        key.classList.add('osk-key-pressed');
+      };
+
+      const onEnd = (x, y) => {
+        if (!isTracking) return;
+        isTracking = false;
+        key.classList.remove('osk-key-pressed');
+
+        const dx = x - startX;
+        const dy = y - startY;
+        const elapsed = Date.now() - startTime;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+
+        let direction = 'center';
+        if (dist > 20 && elapsed < 350) {
+          if (Math.abs(dx) > Math.abs(dy)) {
+            direction = dx > 0 ? 'right' : 'left';
+          } else {
+            direction = dy > 0 ? 'down' : 'up';
           }
         }
-        input.value = '';
-      }
+
+        key.classList.add('osk-key-flicked');
+        setTimeout(() => key.classList.remove('osk-key-flicked'), 120);
+
+        const action = key.dataset.action;
+        if (action === 'backspace') {
+          this.handleBackspace();
+          return;
+        }
+        if (action === 'space') {
+          this.handleSpace();
+          return;
+        }
+        if (action === 'dakuten') {
+          this.handleDakuten(direction);
+          return;
+        }
+
+        const keyLabel = key.dataset.key;
+        const kana = this.getFlickKana(keyLabel, direction);
+        if (kana) {
+          this.handleKeyInput(kana);
+        }
+      };
+
+      key.addEventListener('touchstart', (e) => {
+        e.preventDefault();
+        const t = e.touches[0];
+        onStart(t.clientX, t.clientY);
+      }, { passive: false });
+
+      key.addEventListener('touchend', (e) => {
+        e.preventDefault();
+        const t = e.changedTouches[0];
+        onEnd(t.clientX, t.clientY);
+      }, { passive: false });
+
+      key.addEventListener('touchmove', (e) => {
+        e.preventDefault();
+      }, { passive: false });
+
+      key.addEventListener('touchcancel', (e) => {
+        isTracking = false;
+        key.classList.remove('osk-key-pressed');
+      });
+
+      key.addEventListener('mousedown', (e) => {
+        onStart(e.clientX, e.clientY);
+      });
+
+      key.addEventListener('mouseup', (e) => {
+        onEnd(e.clientX, e.clientY);
+      });
+
+      key.addEventListener('mouseleave', () => {
+        if (isTracking) {
+          isTracking = false;
+          key.classList.remove('osk-key-pressed');
+        }
+      });
     });
   }
 
-  focusMobileInput() {
-    const input = document.getElementById('mobile-input');
-    if (input) {
-      input.focus();
+  getFlickKana(key, direction) {
+    const flickMap = {
+      a: { center: 'あ', up: 'い', down: 'え', left: 'が', right: 'お' },
+      k: { center: 'か', up: 'き', down: 'け', left: 'っ', right: 'こ' },
+      s: { center: 'さ', up: 'し', down: 'せ', left: 'ざ', right: 'そ' },
+      n: { center: 'な', up: 'に', down: 'ね', left: 'ぬ', right: 'の' },
+      t: { center: 'た', up: 'ち', down: 'て', left: 'だ', right: 'と' },
+      h: { center: 'は', up: 'ひ', down: 'へ', left: 'ば', right: 'ほ' },
+      m: { center: 'ま', up: 'み', down: 'め', left: 'む', right: 'も' },
+      y: { center: 'や', up: 'ゆ', down: 'よ', left: 'ゃ', right: 'ゅ' },
+      r: { center: 'ら', up: 'り', down: 'れ', left: 'る', right: 'ろ' },
+      w: { center: 'わ', up: 'を', down: 'う', left: 'ん', right: 'ー' },
+      tsu: { center: 'っ' },
+    };
+    const map = flickMap[key];
+    return map ? map[direction] || null : null;
+  }
+
+  handleKeyInput(kana) {
+    if (!this.state.selectedCell) return;
+    const { row, col } = this.state.selectedCell;
+    const cell = this.state.grid[row]?.[col];
+    if (!cell) return;
+
+    if (kana === 'ー') {
+      cell.userInput = (cell.userInput || '') + 'ー';
+      this.checkWordCompletion();
+      this.moveToNextCell();
+      this.render();
+      return;
+    }
+
+    if (['ゃ', 'ゅ', 'ょ'].includes(kana)) {
+      const prevCell = this.getPreviousCell();
+      if (prevCell) {
+        const base = prevCell.userInput || '';
+        if (base.length === 1 && this.canCombine(base, kana)) {
+          prevCell.userInput = base + kana;
+          this.checkWordCompletion();
+          this.moveToNextCell();
+          this.render();
+          return;
+        }
+      }
+      cell.userInput = kana;
+      this.checkWordCompletion();
+      this.moveToNextCell();
+      this.render();
+      return;
+    }
+
+    cell.userInput = kana;
+    this.checkWordCompletion();
+    this.moveToNextCell();
+    this.render();
+  }
+
+  canCombine(base, small) {
+    const ya = ['き', 'し', 'ち', 'に', 'ひ', 'み', 'り', 'ぎ', 'じ', 'び', 'ぴ'];
+    const yu = ['き', 'く', 'し', 'す', 'ち', 'つ', 'に', 'ぬ', 'ひ', 'ふ', 'み', 'む', 'り', 'る', 'ぎ', 'ぐ', 'じ', 'ず', 'び', 'ぶ', 'ぴ', 'ぷ'];
+    const yo = ['き', 'け', 'こ', 'し', 'せ', 'そ', 'ち', 'て', 'と', 'に', 'ね', 'の', 'ひ', 'へ', 'ほ', 'み', 'め', 'も', 'り', 'れ', 'ろ', 'ぎ', 'げ', 'ご', 'じ', 'ぜ', 'ぞ', 'び', 'べ', 'ぼ', 'ぴ', 'ぺ', 'ぽ'];
+    if (small === 'ゃ') return ya.includes(base);
+    if (small === 'ゅ') return yu.includes(base);
+    if (small === 'ょ') return yo.includes(base);
+    return false;
+  }
+
+  getPreviousCell() {
+    if (!this.state.selectedCell || !this.state.selectedWord) return null;
+    const { row, col } = this.state.selectedCell;
+    const word = this.state.selectedWord;
+
+    let prevRow, prevCol;
+    if (word.direction === 'across') {
+      prevRow = row;
+      prevCol = col - 1;
+    } else {
+      prevRow = row - 1;
+      prevCol = col;
+    }
+
+    if (prevRow >= 0 && prevCol >= 0 && this.state.grid[prevRow]?.[prevCol]) {
+      return this.state.grid[prevRow][prevCol];
+    }
+    return null;
+  }
+
+  handleBackspace() {
+    if (this.state.romajiBuffer.length > 0) {
+      this.state.romajiBuffer = this.state.romajiBuffer.slice(0, -1);
+      this.render();
+      return;
+    }
+    this.deleteChar();
+  }
+
+  handleSpace() {
+    this.toggleDirection();
+  }
+
+  handleDakuten(direction) {
+    if (!this.state.selectedCell || !this.state.selectedWord) return;
+    const { row, col } = this.state.selectedCell;
+    const cell = this.state.grid[row]?.[col];
+    if (!cell || !cell.userInput) return;
+
+    const kana = cell.userInput;
+    const isDakuten = this.dakutenToBase[kana];
+    const isHandakuten = this.handakutenToBase[kana];
+    const isBase = this.baseToDakuten[kana];
+    const isBaseHand = this.baseToHandakuten[kana];
+
+    let converted = null;
+    const isDownRight = direction === 'down' || direction === 'right';
+
+    if (isBase || isBaseHand) {
+      if (isDownRight) {
+        converted = this.baseToHandakuten[kana] || this.baseToDakuten[kana];
+      } else {
+        converted = this.baseToDakuten[kana] || this.baseToHandakuten[kana];
+      }
+    } else if (isDakuten) {
+      if (isDownRight) {
+        converted = isDakuten;
+      } else {
+        converted = this.baseToHandakuten[isDakuten] || isDakuten;
+      }
+    } else if (isHandakuten) {
+      converted = isHandakuten;
+    }
+
+    if (converted && converted !== kana) {
+      cell.userInput = converted;
+      this.checkWordCompletion();
+      this.render();
+    }
+  }
+
+  baseToDakuten = {
+    'か': 'が', 'き': 'ぎ', 'く': 'ぐ', 'け': 'げ', 'こ': 'ご',
+    'さ': 'ざ', 'し': 'じ', 'す': 'ず', 'せ': 'ぜ', 'そ': 'ぞ',
+    'た': 'だ', 'ち': 'ぢ', 'つ': 'づ', 'て': 'で', 'と': 'ど',
+    'は': 'ば', 'ひ': 'び', 'ふ': 'ぶ', 'へ': 'べ', 'ほ': 'ぼ',
+  };
+
+  baseToHandakuten = {
+    'ほ': 'ぽ', 'ひ': 'ぴ', 'ふ': 'ぷ', 'へ': 'ぺ',
+  };
+
+  dakutenToBase = {
+    'が': 'か', 'ぎ': 'き', 'ぐ': 'く', 'げ': 'け', 'ご': 'こ',
+    'ざ': 'さ', 'じ': 'し', 'ず': 'す', 'ぜ': 'せ', 'ぞ': 'そ',
+    'だ': 'た', 'ぢ': 'ち', 'づ': 'つ', 'で': 'て', 'ど': 'と',
+    'ば': 'は', 'び': 'ひ', 'ぶ': 'ふ', 'べ': 'へ', 'ぼ': 'ほ',
+  };
+
+  handakutenToBase = {
+    'ぽ': 'ほ', 'ぴ': 'ひ', 'ぷ': 'ふ', 'ぺ': 'へ',
+  };
+
+  toggleKeyboard() {
+    this.state.keyboardVisible = !this.state.keyboardVisible;
+    const container = document.getElementById('on-screen-keyboard');
+    const toggle = document.getElementById('keyboard-toggle');
+
+    if (this.state.keyboardVisible) {
+      container.classList.remove('hidden');
+      toggle.classList.add('active');
+      document.body.classList.add('osk-visible');
+    } else {
+      container.classList.add('hidden');
+      toggle.classList.remove('active');
+      document.body.classList.remove('osk-visible');
     }
   }
 
