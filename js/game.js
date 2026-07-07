@@ -974,16 +974,16 @@ class Game {
 
   getFlickKana(key, direction) {
     const flickMap = {
-      a: { center: 'あ', up: 'い', down: 'え', left: 'が', right: 'お' },
-      k: { center: 'か', up: 'き', down: 'け', left: 'っ', right: 'こ' },
-      s: { center: 'さ', up: 'し', down: 'せ', left: 'ざ', right: 'そ' },
-      n: { center: 'な', up: 'に', down: 'ね', left: 'ぬ', right: 'の' },
-      t: { center: 'た', up: 'ち', down: 'て', left: 'だ', right: 'と' },
-      h: { center: 'は', up: 'ひ', down: 'へ', left: 'ば', right: 'ほ' },
-      m: { center: 'ま', up: 'み', down: 'め', left: 'む', right: 'も' },
-      y: { center: 'や', up: 'ゆ', down: 'よ', left: 'ゃ', right: 'ゅ' },
-      r: { center: 'ら', up: 'り', down: 'れ', left: 'る', right: 'ろ' },
-      w: { center: 'わ', up: 'を', down: 'う', left: 'ん', right: 'ー' },
+      a: { center: 'あ', up: 'う', left: 'い', right: 'え', down: 'お' },
+      k: { center: 'か', up: 'く', left: 'き', right: 'け', down: 'こ' },
+      s: { center: 'さ', up: 'す', left: 'し', right: 'せ', down: 'そ' },
+      t: { center: 'た', up: 'つ', left: 'ち', right: 'て', down: 'と' },
+      n: { center: 'な', up: 'ぬ', left: 'に', right: 'ね', down: 'の' },
+      h: { center: 'は', up: 'ふ', left: 'ひ', right: 'へ', down: 'ほ' },
+      m: { center: 'ま', up: 'む', left: 'み', right: 'め', down: 'も' },
+      y: { center: 'や', up: 'ゆ', left: 'ゃ', right: 'ょ', down: 'よ' },
+      r: { center: 'ら', up: 'る', left: 'り', right: 'れ', down: 'ろ' },
+      w: { center: 'わ', up: 'う', left: 'ゐ', right: 'ゑ', down: 'を' },
       tsu: { center: 'っ' },
     };
     const map = flickMap[key];
