@@ -22,12 +22,14 @@ class Game {
   }
 
   init() {
-    this.loadPuzzles();
+    const wlSelector = document.getElementById('wordlist-selector');
+    const url = wlSelector ? wlSelector.value : 'data/puzzles.csv';
+    this.loadPuzzles(url);
     this.setupEventListeners();
   }
 
-  loadPuzzles() {
-    fetch('data/puzzles.csv')
+  loadPuzzles(url = 'data/puzzles.csv') {
+    fetch(url)
       .then(r => r.text())
       .then(text => {
         const parsed = parseCSV(text);
@@ -36,12 +38,11 @@ class Game {
                            parsed.rows[0].row !== undefined && 
                            parsed.rows[0].row !== '';
           
+          this.state.wordlist = parsed.rows;
           if (isManual) {
-            this.state.wordlist = parsed.rows;
             this.loadManualLayout(parsed.rows);
           } else {
-            this.state.wordlist = parsed.rows;
-            this.generateRandomPuzzle('medium');
+            this.generateRandomPuzzle(this.state.currentDifficulty);
           }
         } else {
           this.loadSamplePuzzle();
@@ -210,6 +211,13 @@ class Game {
     if (selector) {
       selector.addEventListener('change', (e) => {
         this.generateRandomPuzzle(e.target.value);
+      });
+    }
+
+    const wlSelector = document.getElementById('wordlist-selector');
+    if (wlSelector) {
+      wlSelector.addEventListener('change', (e) => {
+        this.loadPuzzles(e.target.value);
       });
     }
   }

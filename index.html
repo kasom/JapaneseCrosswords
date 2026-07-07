@@ -25,6 +25,14 @@
             <option value="hard">Large (15x15)</option>
           </select>
         </div>
+        <div class="control-group">
+          <label for="wordlist-selector">Wordlist:</label>
+          <select id="wordlist-selector" class="puzzle-selector">
+            <option value="data/puzzles.csv" selected>General</option>
+            <option value="data/verbs_adjectives.csv">Verbs & Adjectives</option>
+            <option value="data/jlpt_n5.csv">JLPT N5</option>
+          </select>
+        </div>
         
         <button class="btn btn-primary" onclick="game.generateRandomPuzzle(document.getElementById('difficulty-selector').value)">
           <span>🎲</span> New Game
