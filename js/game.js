@@ -981,10 +981,9 @@ class Game {
       n: { center: 'な', up: 'ぬ', left: 'に', right: 'ね', down: 'の' },
       h: { center: 'は', up: 'ふ', left: 'ひ', right: 'へ', down: 'ほ' },
       m: { center: 'ま', up: 'む', left: 'み', right: 'め', down: 'も' },
-      y: { center: 'や', up: 'ゆ', left: 'ゃ', right: 'ょ', down: 'よ' },
+      y: { center: 'や', up: 'ゆ', down: 'よ' },
       r: { center: 'ら', up: 'る', left: 'り', right: 'れ', down: 'ろ' },
       w: { center: 'わ', up: 'ん', left: 'を', right: 'ー', down: '〜' },
-      tsu: { center: 'っ' },
     };
     const map = flickMap[key];
     return map ? map[direction] || null : null;
@@ -1102,6 +1101,10 @@ class Game {
       } else {
         converted = kana;
       }
+    } else if (this.smallToNormal[kana]) {
+      converted = this.smallToNormal[kana];
+    } else if (this.normalToSmall[kana]) {
+      converted = this.normalToSmall[kana];
     }
 
     if (converted && converted !== kana) {
@@ -1131,6 +1134,16 @@ class Game {
 
   handakutenToBase = {
     'ぽ': 'ほ', 'ぴ': 'ひ', 'ぷ': 'ふ', 'ぺ': 'へ',
+  };
+
+  normalToSmall = {
+    'あ': 'ぁ', 'い': 'ぃ', 'う': 'ぅ', 'え': 'ぇ', 'お': 'ぉ',
+    'つ': 'っ', 'や': 'ゃ', 'ゆ': 'ゅ', 'よ': 'ょ', 'を': 'ゎ',
+  };
+
+  smallToNormal = {
+    'ぁ': 'あ', 'ぃ': 'い', 'ぅ': 'う', 'ぇ': 'え', 'ぉ': 'お',
+    'っ': 'つ', 'ゃ': 'や', 'ゅ': 'ゆ', 'ょ': 'よ', 'ゎ': 'を',
   };
 
   toggleKeyboard() {

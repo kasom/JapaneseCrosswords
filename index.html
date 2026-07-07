@@ -66,7 +66,7 @@
 
     <div class="instructions">
       <strong>How to use the 12-key keyboard:</strong> Tap a key to enter its center kana. Flick up/down/left/right for variant kana (e.g., flick <code>あ</code> up → う, left → い, right → え, down → お).
-      Flick <code>や</code> left/right for small ゃ/ょ. Tap <code>っ</code> for small tsu. Tap <code>゛゜</code> to apply dakuten (か→が) or handakuten (ほ→ぽ). Tap <code>⌫</code> to delete, <code>⇄</code> to toggle across/down.
+      Tap <code>゛゜</code> to apply dakuten (か→が), handakuten (ほ→ぽ), or toggle small kana (あ→ぁ, つ→っ, や→ゃ). Tap <code>⌫</code> to delete, <code>⇄</code> to toggle across/down.
     </div>
 
     <div class="container">
@@ -171,13 +171,11 @@
        <span class="osk-flick osk-flick-right">め</span>
        <span class="osk-flick osk-flick-down">も</span>
      </div>
-    <div class="osk-key" data-key="y" style="grid-row:3;grid-column:2">
-       <span class="osk-flick osk-flick-up">ゆ</span>
-       <span class="osk-flick osk-flick-left">ゃ</span>
-       <span class="osk-flick osk-flick-center">や</span>
-       <span class="osk-flick osk-flick-right">ょ</span>
-       <span class="osk-flick osk-flick-down">よ</span>
-     </div>
+     <div class="osk-key" data-key="y" style="grid-row:3;grid-column:2">
+        <span class="osk-flick osk-flick-up">ゆ</span>
+        <span class="osk-flick osk-flick-center">や</span>
+        <span class="osk-flick osk-flick-down">よ</span>
+      </div>
     <div class="osk-key" data-key="r" style="grid-row:3;grid-column:3">
        <span class="osk-flick osk-flick-up">る</span>
        <span class="osk-flick osk-flick-left">り</span>
@@ -199,10 +197,8 @@
         <span class="osk-flick osk-flick-right">ー</span>
         <span class="osk-flick osk-flick-down">〜</span>
       </div>
-    <div class="osk-key" data-key="tsu" style="grid-row:4;grid-column:3">
-      <span class="osk-flick osk-flick-center">っ</span>
-    </div>
-  </div>
+
+</div>
 
   <script src="js/csvParser.js"></script>
   <script src="js/romaji.js"></script>
