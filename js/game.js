@@ -540,7 +540,6 @@ class Game {
   }
 
   useHint() {
-    if (this.state.hintsUsed >= this.state.maxHints) return;
     if (!this.state.selectedCell) return;
 
     const { row, col } = this.state.selectedCell;
@@ -560,6 +559,7 @@ class Game {
     const word = this.state.selectedWord;
     const syllables = splitIntoSyllables(word.reading || '');
     const wordLen = syllables.length;
+    let newlyFilledCount = 0;
 
     for (let i = 0; i < wordLen; i++) {
       let r, c;
@@ -573,8 +573,15 @@ class Game {
 
       const cell = this.state.grid[r]?.[c];
       if (cell) {
-        cell.userInput = cell.char;
+        if (cell.userInput !== cell.char) {
+          cell.userInput = cell.char;
+          newlyFilledCount++;
+        }
       }
+    }
+
+    if (newlyFilledCount > 0) {
+      this.state.hintsUsed += newlyFilledCount;
     }
 
     this.checkWordCompletion();
@@ -668,7 +675,7 @@ class Game {
 
     const hintsEl = document.getElementById('victory-hints');
     if (hintsEl) {
-      hintsEl.textContent = `${this.state.hintsUsed} / ${this.state.maxHints}`;
+      hintsEl.textContent = this.state.hintsUsed;
     }
 
     const listEl = document.getElementById('victory-words-list');
@@ -1289,6 +1296,17 @@ class Game {
     }
   }
 
+  toggleMenu() {
+    const controls = document.getElementById('header-controls');
+    const toggle = document.getElementById('menu-toggle');
+    if (controls) {
+      const isShowing = controls.classList.toggle('show');
+      if (toggle) {
+        toggle.classList.toggle('active', isShowing);
+      }
+    }
+  }
+
   updateTimer() {
     const timerEl = document.getElementById('timer');
     if (!timerEl) return;
@@ -1305,23 +1323,12 @@ class Game {
     const total = this.state.placedWords.length;
     const completed = this.state.completedWords.size;
     progressEl.textContent = completed + '/' + total;
-
-    const dotsEl = document.getElementById('progress-dots');
-    if (dotsEl) {
-      let dots = '';
-      for (let i = 0; i < total; i++) {
-        const w = this.state.placedWords[i];
-        const isCompleted = this.state.completedWords.has(`${w.number}_${w.direction}`);
-        dots += '<span class="dot' + (isCompleted ? ' completed' : '') + '"></span>';
-      }
-      dotsEl.innerHTML = dots;
-    }
   }
 
   updateHints() {
     const hintsEl = document.getElementById('hints-remaining');
     if (!hintsEl) return;
-    hintsEl.textContent = this.state.maxHints - this.state.hintsUsed;
+    hintsEl.textContent = this.state.hintsUsed;
   }
 
   updateDifficultyControls() {

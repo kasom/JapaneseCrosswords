@@ -12,54 +12,53 @@
 <body>
   <div class="app">
     <header class="header">
-      <div class="logo-area">
-        <span class="logo-emoji">🧩</span>
-        <h1>Japanese Crossword</h1>
-      </div>
-      <div class="header-controls">
-        <div class="control-group">
-          <label for="difficulty-selector">Board Size:</label>
-          <select id="difficulty-selector" class="puzzle-selector">
-            <option value="easy">Small (10x10)</option>
-            <option value="medium" selected>Medium (13x13)</option>
-            <option value="hard">Large (15x15)</option>
-          </select>
+      <div class="header-top-row">
+        <div class="logo-area">
+          <span class="logo-emoji">🧩</span>
+          <h1>Japanese Crossword</h1>
         </div>
-        <div class="control-group">
-          <label for="wordlist-selector">Wordlist:</label>
-          <select id="wordlist-selector" class="puzzle-selector">
-            <option value="data/puzzles.csv" selected>General</option>
-            <option value="data/verbs_adjectives.csv">Verbs & Adjectives</option>
-            <option value="data/jlpt_n5.csv">JLPT N5</option>
-            <option value="data/jlpt_n4.csv">JLPT N4</option>
-          </select>
+        <div class="header-top-actions">
+          <span class="progress-badge" id="progress">0/0</span>
+          <div class="timer" id="timer">00:00</div>
+          <button class="btn btn-toggle btn-menu" id="menu-toggle" onclick="game.toggleMenu()">
+            <span>⚙️</span> Menu
+          </button>
+        </div>
+      </div>
+      
+      <div class="header-controls" id="header-controls">
+        <div class="control-group-row">
+          <div class="control-group">
+            <label for="difficulty-selector">Board Size:</label>
+            <select id="difficulty-selector" class="puzzle-selector">
+              <option value="easy">Small (10x10)</option>
+              <option value="medium" selected>Medium (13x13)</option>
+              <option value="hard">Large (15x15)</option>
+            </select>
+          </div>
+          <div class="control-group">
+            <label for="wordlist-selector">Wordlist:</label>
+            <select id="wordlist-selector" class="puzzle-selector">
+              <option value="data/puzzles.csv" selected>General</option>
+              <option value="data/verbs_adjectives.csv">Verbs & Adjectives</option>
+              <option value="data/jlpt_n5.csv">JLPT N5</option>
+              <option value="data/jlpt_n4.csv">JLPT N4</option>
+            </select>
+          </div>
         </div>
         
-        <button class="btn btn-primary" onclick="game.generateRandomPuzzle(document.getElementById('difficulty-selector').value)">
-          <span>🎲</span> New Game
-        </button>
-
-        <div class="hints-container">
+        <div class="header-buttons-row">
+          <button class="btn btn-primary" onclick="game.generateRandomPuzzle(document.getElementById('difficulty-selector').value)">
+            <span>🎲</span> New Game
+          </button>
           <button class="btn btn-hint" onclick="game.useHint()">
-            Hint <span class="badge" id="hints-remaining">3</span>
+            Hint <span class="badge" id="hints-remaining">0</span>
           </button>
           <button class="btn btn-reveal" onclick="game.revealWord()">Reveal</button>
+          <button class="btn btn-toggle" onclick="game.toggleHints()">Romaji Hint</button>
         </div>
-        
-        <button class="btn btn-toggle" onclick="game.toggleHints()">Romaji Hint</button>
-        <div class="timer" id="timer">00:00</div>
       </div>
     </header>
-    
-    <div class="progress-container">
-      <div class="progress-info">
-        <span class="progress-label">Completion Status</span>
-        <span class="progress-text" id="progress">0/0</span>
-      </div>
-      <div class="progress-bar-wrapper">
-        <div class="progress-dots" id="progress-dots"></div>
-      </div>
-    </div>
 
     <div class="instructions hidden" id="instructions-container">
       <strong>How to use the 12-key keyboard:</strong> Tap a key to enter its center kana. Flick up/down/left/right for variant kana (e.g., flick <code>あ</code> up → う, left → い, right → え, down → お).
@@ -99,7 +98,7 @@
           </div>
           <div class="stat-card">
             <span class="stat-label">Hints Used</span>
-            <span id="victory-hints" class="stat-value">0/3</span>
+            <span id="victory-hints" class="stat-value">0</span>
           </div>
         </div>
         <div class="victory-words-title">Vocabulary Recap</div>
