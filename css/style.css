@@ -1027,3 +1027,16 @@ body {
   transform: scale(0.8) translateY(40px);
 }
 
+.instructions.hidden {
+  display: none;
+}
+
+.osk-key.active {
+  background: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.osk-key.active .osk-flick-center {
+  color: #fff !important;
+}
+

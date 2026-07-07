@@ -61,7 +61,7 @@
       </div>
     </div>
 
-    <div class="instructions">
+    <div class="instructions hidden" id="instructions-container">
       <strong>How to use the 12-key keyboard:</strong> Tap a key to enter its center kana. Flick up/down/left/right for variant kana (e.g., flick <code>あ</code> up → う, left → い, right → え, down → お).
       Tap <code>゛゜</code> to apply dakuten (か→が), handakuten (ほ→ぽ), or toggle small kana (あ→ぁ, つ→っ, や→ゃ). Tap <code>⌫</code> to delete, <code>⇄</code> to toggle across/down.
     </div>
@@ -180,6 +180,9 @@
        <span class="osk-flick osk-flick-right">れ</span>
        <span class="osk-flick osk-flick-down">ろ</span>
      </div>
+    <div class="osk-key osk-key-action" data-action="help" style="grid-row:3;grid-column:4">
+      <span class="osk-flick osk-flick-center">?</span>
+    </div>
     <div class="osk-key osk-key-action" data-action="dakuten" style="grid-row:4;grid-column:1">
       <span class="osk-flick osk-flick-up">゛</span>
       <span class="osk-flick osk-flick-left">゛</span>

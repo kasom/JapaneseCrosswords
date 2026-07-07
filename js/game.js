@@ -18,7 +18,8 @@ class Game {
       showHints: false,
       romajiBuffer: '',      // Typing buffer
       currentDifficulty: 'medium', // 'easy', 'medium', 'hard'
-      keyboardVisible: false
+      keyboardVisible: false,
+      helpVisible: false
     };
   }
 
@@ -925,6 +926,10 @@ class Game {
           this.toggleKeyboard();
           return;
         }
+        if (action === 'help') {
+          this.toggleHelp();
+          return;
+        }
 
         const keyLabel = key.dataset.key;
         const kana = this.getFlickKana(keyLabel, direction);
@@ -1257,6 +1262,22 @@ class Game {
       container.classList.add('hidden');
       if (fab) fab.classList.remove('hidden');
       document.body.classList.remove('osk-visible');
+    }
+  }
+
+  toggleHelp() {
+    this.state.helpVisible = !this.state.helpVisible;
+    const container = document.getElementById('instructions-container');
+    const helpBtn = document.querySelector('[data-action="help"]');
+
+    if (container) {
+      if (this.state.helpVisible) {
+        container.classList.remove('hidden');
+        if (helpBtn) helpBtn.classList.add('active');
+      } else {
+        container.classList.add('hidden');
+        if (helpBtn) helpBtn.classList.remove('active');
+      }
     }
   }
 
