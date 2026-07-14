@@ -1074,3 +1074,151 @@ body {
   color: #fff !important;
 }
 
+/* Print styles */
+@media print {
+  @page {
+    margin: 1cm;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-family: sans-serif;
+  }
+
+  .app {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 0 !important;
+  }
+
+  /* Hide interactive elements, headers, and UI widgets */
+  .header,
+  .instructions,
+  .keyboard-fab,
+  .osk-container,
+  .active-clues-banner,
+  .import-export,
+  .modal-overlay,
+  .btn,
+  .timer,
+  .progress-badge,
+  .romaji-buffer,
+  .reading {
+    display: none !important;
+  }
+
+  .container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+    width: 100% !important;
+  }
+
+  .grid-container {
+    width: 100% !important;
+    max-width: 450px !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    page-break-inside: avoid !important;
+  }
+
+  .grid {
+    background: #000000 !important;
+    gap: 1px !important;
+    border: 1px solid #000000 !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+    max-width: 400px !important;
+    aspect-ratio: 1 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .cell {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    transform: none !important;
+    transition: none !important;
+    cursor: default !important;
+  }
+
+  .cell.empty {
+    background: #e2e8f0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .cell-number {
+    color: #000000 !important;
+    opacity: 1 !important;
+    font-size: 8px !important;
+    top: 2px !important;
+    left: 4px !important;
+  }
+
+  .cell-char {
+    color: #000000 !important;
+    font-size: 16px !important;
+    margin-top: 6px !important;
+  }
+
+  /* Clues section */
+  .clues-container {
+    width: 100% !important;
+    height: auto !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin-top: 20px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 30px !important;
+    page-break-inside: avoid !important;
+  }
+
+  .clues-section {
+    flex: 1 !important;
+    overflow-y: visible !important;
+    margin-bottom: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .clues-section h3 {
+    color: #000000 !important;
+    background: none !important;
+    border-bottom: 2px solid #000000 !important;
+    padding: 4px 0 !important;
+    margin-bottom: 10px !important;
+    position: static !important;
+  }
+
+  .clue-item {
+    background: none !important;
+    border: none !important;
+    padding: 4px 0 !important;
+    color: #000000 !important;
+    page-break-inside: avoid !important;
+  }
+
+  .clue-number {
+    color: #000000 !important;
+    font-weight: bold !important;
+  }
+
+  .clue-meaning {
+    color: #000000 !important;
+  }
+}
+
+
