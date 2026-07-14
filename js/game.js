@@ -717,6 +717,36 @@ class Game {
     this.updateTimer();
     this.updateProgress();
     this.updateHints();
+    this.renderPrintAnswerKey();
+  }
+
+  renderPrintAnswerKey() {
+    const keyEl = document.getElementById('print-answer-key');
+    if (!keyEl) return;
+
+    const across = this.state.placedWords
+      .filter(w => w.direction === 'across')
+      .sort((a, b) => a.number - b.number);
+
+    const down = this.state.placedWords
+      .filter(w => w.direction === 'down')
+      .sort((a, b) => a.number - b.number);
+
+    const formatWord = (w) => {
+      const display = (w.word && w.word !== w.reading) ? `${w.word} (${w.reading})` : w.reading;
+      return `<span class="answer-item"><strong>${w.number}</strong>. ${display}</span>`;
+    };
+
+    const acrossHtml = across.map(formatWord).join(' &nbsp;&nbsp; ');
+    const downHtml = down.map(formatWord).join(' &nbsp;&nbsp; ');
+
+    keyEl.innerHTML = `
+      <h4>ANSWER KEY (解答)</h4>
+      <div class="answer-key-content">
+        <div class="answer-key-section"><strong>ACROSS:</strong> ${acrossHtml || 'None'}</div>
+        <div class="answer-key-section"><strong>DOWN:</strong> ${downHtml || 'None'}</div>
+      </div>
+    `;
   }
 
   getRomajiFromKana(kana) {

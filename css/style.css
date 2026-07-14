@@ -1074,6 +1074,10 @@ body {
   color: #fff !important;
 }
 
+.print-answer-key {
+  display: none;
+}
+
 /* Print styles */
 @media print {
   @page {
@@ -1217,6 +1221,37 @@ body {
   }
 
   .clue-meaning {
+    color: #000000 !important;
+  }
+
+  .print-answer-key {
+    display: block !important;
+    transform: rotate(180deg) !important;
+    transform-origin: center !important;
+    margin-top: 60px !important;
+    border-top: 1px dashed #000000 !important;
+    padding-top: 15px !important;
+    text-align: center !important;
+    font-size: 10px !important;
+    page-break-inside: avoid !important;
+    width: 100% !important;
+  }
+
+  .print-answer-key h4 {
+    margin-bottom: 8px !important;
+    font-size: 12px !important;
+    letter-spacing: 2px !important;
+    color: #000000 !important;
+  }
+
+  .answer-key-section {
+    margin-bottom: 6px !important;
+    color: #000000 !important;
+  }
+
+  .answer-item {
+    display: inline-block !important;
+    white-space: nowrap !important;
     color: #000000 !important;
   }
 }
